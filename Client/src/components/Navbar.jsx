@@ -13,10 +13,10 @@ const Navbar = () => {
         </a>
 
         <ul className="md:flex hidden items-center gap-10">
-            <li><a className="hover:text-gray-500/80 transition" href="#">Home</a></li>
-            <li><a className="hover:text-gray-500/80 transition" href="#">About</a></li>
-            <li><a className="hover:text-gray-500/80 transition" href="#">Services</a></li>
-            <li><a className="hover:text-gray-500/80 transition" href="#">Contact</a></li>
+            <li><a className="hover:text-gray-500/80 transition" href="#">HOME</a></li>
+            <li><a className="hover:text-gray-500/80 transition" href="#">ABOUT US</a></li>
+            <li><a className="hover:text-gray-500/80 transition" href="#">OUR SERVICES</a></li>
+            <li><a className="hover:text-gray-500/80 transition" href="#">CONTACT US</a></li>
         </ul>
 
         <button type="button" className="bg-white text-gray-600 border border-gray-300 md:inline hidden text-sm hover:bg-gray-50 active:scale-95 transition-all w-40 h-11 rounded-full">
@@ -32,10 +32,10 @@ const Navbar = () => {
         {menuOpen && (
             <div className="mobile-menu absolute top-[70px] left-0 w-full bg-white p-6">
                 <ul className="flex flex-col space-y-4 text-lg">
-                    <li><a href="#" className="text-sm">Home</a></li>
-                    <li><a href="#" className="text-sm">Services</a></li>
-                    <li><a href="#" className="text-sm">Portfolio</a></li>
-                    <li><a href="#" className="text-sm">Pricing</a></li>
+                    <li><a href="#" className="text-sm">HOME</a></li>
+                    <li><a href="#" className="text-sm">ABOUT US</a></li>
+                    <li><a href="#" className="text-sm">OUR SERVICES</a></li>
+                    <li><a href="#" className="text-sm">CONTACT US</a></li>
                 </ul>
             </div>
         )}
