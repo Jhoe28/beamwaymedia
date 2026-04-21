@@ -1,22 +1,23 @@
 import React from 'react'
 import { useState } from 'react'
+import {Link} from 'react-router-dom'
 import assets from '../assets/assets'
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <nav className="h-[70px] relative w-full px-6 md:px-16 lg:px-24 xl:px-32 flex items-center justify-between z-20 bg-white text-gray-700 shadow-[0px_4px_25px_0px_#0000000D] transition-all">
+    <nav className="h-[70px] relative w-full px-6 md:px-12 lg:px-16 xl:px-24 flex items-center justify-between z-20 bg-white text-gray-700 shadow-[0px_4px_25px_0px_#0000000D] transition-all">
             
         <a href="/">
             <img src={assets.Logo} alt="logo" className="w-40 h-auto" />
         </a>
 
-        <ul className="md:flex hidden items-center gap-10">
-            <li><a className="hover:text-gray-500/80 transition" href="#">HOME</a></li>
-            <li><a className="hover:text-gray-500/80 transition" href="#">ABOUT US</a></li>
-            <li><a className="hover:text-gray-500/80 transition" href="#">OUR SERVICES</a></li>
-            <li><a className="hover:text-gray-500/80 transition" href="#">CONTACT US</a></li>
+        <ul className="md:flex hidden items-center gap-16">
+            <li><Link to="/" className="nav-link  transition">HOME</Link></li>
+            <li><Link to="/about" className="nav-link transition">ABOUT US</Link></li>
+            <li><Link to="/services" className="nav-link transition">OUR SERVICES</Link></li>
+            <li><Link to="/contact" className="nav-link transition">CONTACT US</Link></li>
         </ul>
 
         <button type="button" className="bg-white text-gray-600 border border-gray-300 md:inline hidden text-sm hover:bg-gray-50 active:scale-95 transition-all w-40 h-11 rounded-full">
@@ -32,10 +33,10 @@ const Navbar = () => {
         {menuOpen && (
             <div className="mobile-menu absolute top-[70px] left-0 w-full bg-white p-6">
                 <ul className="flex flex-col space-y-4 text-lg">
-                    <li><a href="#" className="text-sm">HOME</a></li>
-                    <li><a href="#" className="text-sm">ABOUT US</a></li>
-                    <li><a href="#" className="text-sm">OUR SERVICES</a></li>
-                    <li><a href="#" className="text-sm">CONTACT US</a></li>
+                    <li><Link to="/" className="text-sm">HOME</Link></li>
+                    <li><Link to="/about" className="text-sm">ABOUT US</Link></li>
+                    <li><Link to="/services" className="text-sm">OUR SERVICES</Link></li>
+                    <li><Link to="/contact" className="text-sm">CONTACT US</Link></li>
                 </ul>
             </div>
         )}
