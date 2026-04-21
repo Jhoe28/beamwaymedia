@@ -1,13 +1,23 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import {Link} from 'react-router-dom'
-import assets from '../assets/assets'
+import assets from '../../assets/assets'
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
+  useEffect(() => {
+    const handleScroll = () => {
+        setScrolled(window.scrollY > 50)
+    }
+    window.addEventListener('scroll', handleScroll)
+    
+    // Cleanup when component unmounts
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   return (
-    <nav className="h-[70px] relative w-full px-6 md:px-12 lg:px-16 xl:px-24 flex items-center justify-between z-20 bg-white text-gray-700 shadow-[0px_4px_25px_0px_#0000000D] transition-all">
+    <nav className="h-[70px] relative w-full px-6 md:px-12 lg:px-16 xl:px-24 flex items-center justify-between z-20 bg-transparent text-gray-700 shadow-[0px_4px_25px_0px_#0000000D] transition-all">
             
         <a href="/">
             <img src={assets.Logo} alt="logo" className="w-40 h-auto" />
