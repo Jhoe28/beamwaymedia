@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Hero from '../components/Hero'
 import assets from '../assets/assets'
 import { Link } from 'react-router-dom'
@@ -7,6 +7,7 @@ import { serviceData } from '../assets/assets'
 import ServiceDescription from '../components/ServiceDescription'
 
 const Home = () => {
+  const [activeId, setActiveId] = useState(1)
   return (
     <>
       <Hero 
@@ -19,7 +20,7 @@ const Home = () => {
       {/* Second Section */}
       <div className='w-full bg-gray-200 mt-0 px-4 md:px-16 lg:px-24 xl:px-32 py-4 sm:py-6 md:py-12 lg:py-16 xl:py-24'>
         <h1 className='text-4xl'>How We Can Help You</h1>
-        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 my-2 sm:my-4 md:my-6 lg:my-12'>
+        <div className='grid max-[870px]:grid-cols-1 max-[920px]:grid-cols-2 min-[921px]:grid-cols-3 my-2 sm:my-4 md:my-6 lg:my-12'>
           {serviceData.map((service, index) => (
             <ServiceTitle key={service.id} img={service.img} title={service.title} slug={service.slug} />
           ))}
@@ -39,10 +40,10 @@ const Home = () => {
 
       {/* Forth Section */}
       <div className='flex flex-col justify-around gap-50 bg-gray-200 relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-gray-600 px-4 md:px-16 lg:px-24 xl:px-32 py-6 sm:py-12 md:py-16 lg:py-24 xl:py-32'>
-        <h1 className='text-7xl'>Our Impact</h1>
+        <h1 className='text-6xl'>Our Impact</h1>
 
-        <div className="grid grid-cols-1 min-[760px]:grid-cols-2 min-[1000px]:grid-cols-4 gap-8">
-          <div style={{backgroundImage: `url(${assets.Projects})`}} className="relative border bg-center bg-cover bg-no-repeat -translate-y-12 border-zinc-200 hover:border-zinc-300 transition-colors rounded-xl p-6 flex flex-col justify-between h-[350px] group">
+        <div className="grid max-[832px]:grid-cols-1 max-[1023px]:grid-cols-2 min-[1024px]:grid-cols-4 gap-8">
+          <div style={{backgroundImage: `url(${assets.Projects})`}} className="relative border bg-center bg-cover bg-no-repeat max[1023px]:translate-y-0 -translate-y-12 border-zinc-200 hover:border-zinc-300 transition-colors rounded-xl p-6 flex flex-col justify-between h-[350px] group">
             {/* Dark gradient overlay */}
             <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-black/90 via-black/70 to-black/30 group-hover:from-black/70 group-hover:via-black/50 group-hover:to-black/20 transition-all duration-300" />
             
@@ -79,18 +80,18 @@ const Home = () => {
       </div>
 
       {/* Fifth Section */}
-      <div className='px-0 md:px-6 lg:px-12 xl:px-16 py-1 sm:py-4 md:py-6 lg:py-12'>
-        <div className='grid grid-cols-1 md:grid-cols-3 gap-8 pb-6 px-4 sm:px-6 md:px-12 lg:px-16 xl:px-24 mb-6 border-b border-gray-300'>
+      <div className='px-2 md:px-2 lg:px-6 xl:px-12 max-[826px]:py-16 lg:py-12'>
+        <div className='grid grid-cols-1 md:grid-cols-3 gap-8 pb-6 px-6 md:px-6 lg:px-12 xl:px-16 max-[826px]:hidden border-b border-gray-300'>
           <div className='flex items-center gap-4'>
-            <img src="" alt="" />
+            <img src={assets.ArrowDown} alt="Arrow Down" className="max-w-5" />
             <p>Services</p>
           </div>
           <div className='flex items-center gap-4'>
-            <img src="" alt="" />
+            <img src={assets.ArrowDown} alt="Arrow Down" className="max-w-5" />
             <p>Description</p>
           </div>
-          <div className='flex items-center gap-4'>
-            <img src="" alt="" />
+          <div className='flex items-center justify-center gap-4'>
+            <img src={assets.ArrowDown} alt="Arrow Down" className="max-w-5" />
           </div>
         </div>
 
@@ -101,6 +102,8 @@ const Home = () => {
             title={service.title}
             description={service.description}
             accentImg={service.accentImg}
+            isActive={activeId === service.id}
+            onHover={() => setActiveId(service.id)}
           />
         ))}
       </div>

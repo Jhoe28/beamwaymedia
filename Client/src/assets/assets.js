@@ -18,12 +18,16 @@ import accentImg_5 from './accentImg_5.png'
 import accentImg_6 from './accentImg_6.png'
 import accentImg_7 from './accentImg_7.png'
 import accentImg_8 from './accentImg_8.png'
+import emailIcon from './emailIcon.png'
+import arrowDown from './arrowDown.png'
 
 const assets = {
     Logo: logo,
     HeroBg: heroBg,
     About_1: about_1,
     Projects: projects,
+    EmailIcon: emailIcon,
+    ArrowDown: arrowDown,
 }
 
 export default assets
@@ -31,8 +35,8 @@ export default assets
 const serviceData = [
     {
         id: 1,
-        slug: "social-media-marketing-management",
-        title: "Social Media Marketing/Management",
+        slug: "social-media-marketing",
+        title: "Social Media Marketing",
         img: socialMediaIcon,
         description: "We manage and structure your brand presence across social platforms through intentional content planning, consistent publishing, and engagement strategies that build visibility, strengthen recognition, and keep your brand active in front of the right audience.",
         accentImg: accentImg_1,
