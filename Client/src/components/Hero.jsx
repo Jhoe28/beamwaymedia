@@ -3,12 +3,12 @@ import assets from '../assets/assets'
 
 const Hero = (props) => {
   return (
-    <div className="flex flex-col max-md:gap-20 md:flex-row items-center justify-between py-8 md:py-12 mt-0 px-4 md:px-16 lg:px-24 xl:px-32">
-        <div className="flex flex-col items-center md:items-start">
-            <h1 className="text-center md:text-left text-4xl leading-11.5 md:text-5xl md:leading-17 font-semibold max-w-xl text-slate-900">
+    <div className="flex flex-col max-md:gap-20 md:flex-row items-start justify-between py-16 md:py-12 mt-0 px-4 md:px-16 lg:px-24 xl:px-32">
+        <div className="flex flex-col items-start md:items-start">
+            <h1 className="text-left md:text-left text-5xl leading-11.5 md:text-5xl md:leading-17 font-semibold max-w-xl text-slate-900">
                 {props.heading}
             </h1>
-            <p className="text-center md:text-left text-sm text-slate-700 max-w-lg mt-2">
+            <p className="text-left md:text-left text-sm text-slate-700 max-w-lg mt-2">
                 {props.subheading}
                 <br/><br/>
                 {props.positioning}

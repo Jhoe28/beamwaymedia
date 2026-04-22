@@ -4,6 +4,7 @@ import assets from '../assets/assets'
 import { Link } from 'react-router-dom'
 import ServiceTitle from '../components/ServiceTitle'
 import { serviceData } from '../assets/assets'
+import ServiceDescription from '../components/ServiceDescription'
 
 const Home = () => {
   return (
@@ -37,40 +38,71 @@ const Home = () => {
       />
 
       {/* Forth Section */}
-      <div className="grid grid-cols-1 min-[760px]:grid-cols-2 min-[1000px]:grid-cols-4 gap-4 px-4 md:px-16 lg:px-24 xl:px-32 py-4 sm:py-6 md:py-12 lg:py-16 xl:py-24">
-        <div style={{backgroundImage: `url(${assets.Projects})`}} className="relative border bg-center bg-cover bg-no-repeat -translate-y-12 border-zinc-200 hover:border-zinc-300 transition-colors rounded-xl p-6 flex flex-col justify-between h-[350px] group">
-          {/* Dark gradient overlay */}
-          <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-black/90 via-black/70 to-black/30 group-hover:from-black/70 group-hover:via-black/50 group-hover:to-black/20 transition-all duration-300" />
+      <div className='flex flex-col justify-around gap-50 bg-gray-200 relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-gray-600 px-4 md:px-16 lg:px-24 xl:px-32 py-6 sm:py-12 md:py-16 lg:py-24 xl:py-32'>
+        <h1 className='text-7xl'>Our Impact</h1>
+
+        <div className="grid grid-cols-1 min-[760px]:grid-cols-2 min-[1000px]:grid-cols-4 gap-8">
+          <div style={{backgroundImage: `url(${assets.Projects})`}} className="relative border bg-center bg-cover bg-no-repeat -translate-y-12 border-zinc-200 hover:border-zinc-300 transition-colors rounded-xl p-6 flex flex-col justify-between h-[350px] group">
+            {/* Dark gradient overlay */}
+            <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-black/90 via-black/70 to-black/30 group-hover:from-black/70 group-hover:via-black/50 group-hover:to-black/20 transition-all duration-300" />
+            
+            {/* Content stays on top */}
+            <p className="text-xl text-right text-white relative z-10">Projects <br/>In Progress</p>
+            <p className="text-2xl text-neutral-200 mb-2 px-2 relative z-10"><span className="font-medium text-7xl">12+</span></p>
+          </div>
+          <div style={{backgroundImage: `url(${assets.Projects})`}} className="relative border bg-center bg-cover bg-no-repeat translate-y-12 border-zinc-200 hover:border-zinc-300 transition-colors rounded-xl p-6 flex flex-col justify-between h-[350px] group">
+            {/* Dark gradient overlay */}
+            <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-black/90 via-black/70 to-black/30 group-hover:from-black/70 group-hover:via-black/50 group-hover:to-black/20 transition-all duration-300" />
+            
+            {/* Content stays on top */}
+            <p className="text-xl text-right text-white relative z-10">Brands <br/>Supported</p>
+            <p className="text-2xl text-neutral-200 mb-2 px-2 relative z-10"><span className="font-medium text-7xl">8+</span></p>
+          </div>
+          <div style={{backgroundImage: `url(${assets.Projects})`}} className="relative border bg-center bg-cover bg-no-repeat -translate-y-14 border-zinc-200 hover:border-zinc-300 transition-colors rounded-xl p-6 flex flex-col justify-between h-[350px] group">
+            {/* Dark gradient overlay */}
+            <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-black/90 via-black/70 to-black/30 group-hover:from-black/70 group-hover:via-black/50 group-hover:to-black/20 transition-all duration-300" />
+            
+            {/* Content stays on top */}
+            <p className="text-xl text-right text-white relative z-10">Content <br/>Pieces Created</p>
+            <p className="text-2xl text-neutral-200 mb-2 px-2 relative z-10"><span className="font-medium text-7xl">100+</span></p>
+          </div>
+          <div style={{backgroundImage: `url(${assets.Projects})`}} className="relative border bg-center bg-cover bg-no-repeat translate-y-16 border-zinc-200 hover:border-zinc-300 transition-colors rounded-xl p-6 flex flex-col justify-between h-[350px] group">
+            {/* Dark gradient overlay */}
+            <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-black/90 via-black/70 to-black/30 group-hover:from-black/70 group-hover:via-black/50 group-hover:to-black/20 transition-all duration-300" />
+            
+            {/* Content stays on top */}
+            <p className="text-xl text-right text-white relative z-10">Strategy Sessions <br/>Delivered</p>
+            <p className="text-2xl text-neutral-200 mb-2 px-2 relative z-10"><span className="font-medium text-7xl">15+</span></p>
+          </div>
           
-          {/* Content stays on top */}
-          <p className="text-xl text-right text-white relative z-10">Projects <br/>In Progress</p>
-          <p className="text-2xl text-neutral-200 mb-2 px-2 relative z-10"><span className="font-bold text-8xl">12+</span></p>
         </div>
-        <div style={{backgroundImage: `url(${assets.Projects})`}} className="relative border bg-center bg-cover bg-no-repeat translate-y-12 border-zinc-200 hover:border-zinc-300 transition-colors rounded-xl p-6 flex flex-col justify-between h-[350px] group">
-          {/* Dark gradient overlay */}
-          <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-black/90 via-black/70 to-black/30 group-hover:from-black/70 group-hover:via-black/50 group-hover:to-black/20 transition-all duration-300" />
-          
-          {/* Content stays on top */}
-          <p className="text-xl text-right text-white relative z-10">Brands <br/>Supported</p>
-          <p className="text-2xl text-neutral-200 mb-2 px-2 relative z-10"><span className="font-bold text-8xl">8+</span></p>
+      </div>
+
+      {/* Fifth Section */}
+      <div className='px-0 md:px-6 lg:px-12 xl:px-16 py-1 sm:py-4 md:py-6 lg:py-12'>
+        <div className='grid grid-cols-1 md:grid-cols-3 gap-8 pb-6 px-4 sm:px-6 md:px-12 lg:px-16 xl:px-24 mb-6 border-b border-gray-300'>
+          <div className='flex items-center gap-4'>
+            <img src="" alt="" />
+            <p>Services</p>
+          </div>
+          <div className='flex items-center gap-4'>
+            <img src="" alt="" />
+            <p>Description</p>
+          </div>
+          <div className='flex items-center gap-4'>
+            <img src="" alt="" />
+          </div>
         </div>
-        <div style={{backgroundImage: `url(${assets.Projects})`}} className="relative border bg-center bg-cover bg-no-repeat -translate-y-14 border-zinc-200 hover:border-zinc-300 transition-colors rounded-xl p-6 flex flex-col justify-between h-[350px] group">
-          {/* Dark gradient overlay */}
-          <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-black/90 via-black/70 to-black/30 group-hover:from-black/70 group-hover:via-black/50 group-hover:to-black/20 transition-all duration-300" />
-          
-          {/* Content stays on top */}
-          <p className="text-xl text-right text-white relative z-10">Content <br/>Pieces Created</p>
-          <p className="text-2xl text-neutral-200 mb-2 px-2 relative z-10"><span className="font-bold text-8xl">100+</span></p>
-        </div>
-        <div style={{backgroundImage: `url(${assets.Projects})`}} className="relative border bg-center bg-cover bg-no-repeat translate-y-16 border-zinc-200 hover:border-zinc-300 transition-colors rounded-xl p-6 flex flex-col justify-between h-[350px] group">
-          {/* Dark gradient overlay */}
-          <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-black/90 via-black/70 to-black/30 group-hover:from-black/70 group-hover:via-black/50 group-hover:to-black/20 transition-all duration-300" />
-          
-          {/* Content stays on top */}
-          <p className="text-xl text-right text-white relative z-10">Strategy Sessions <br/>Delivered</p>
-          <p className="text-2xl text-neutral-200 mb-2 px-2 relative z-10"><span className="font-bold text-8xl">15+</span></p>
-        </div>
-        
+
+        {serviceData.map((service) => (
+          <ServiceDescription
+            key={service.id}
+            icon={service.img}
+            title={service.title}
+            description={service.description}
+            accentImg={service.accentImg}
+          />
+        ))}
       </div>
     </>
   )

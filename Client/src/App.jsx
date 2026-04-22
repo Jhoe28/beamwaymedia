@@ -6,6 +6,7 @@ import Services from './pages/Services'
 import ServiceDetail from './pages/ServiceDetail'
 import Contact from './pages/Contact'
 import Navbar from './components/common/Navbar'
+import Footer from './components/common/Footer'
 
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
           <Route path='/services/:slug' element={<ServiceDetail />} />
           <Route path='/contact' element={<Contact />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   )
