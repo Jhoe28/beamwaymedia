@@ -3,7 +3,7 @@ import assets from '../assets/assets'
 
 const Hero = (props) => {
   return (
-    <div className="flex flex-col max-md:gap-20 md:flex-row pb-0 items-center justify-between py-0 md:py-4 mt-0 px-4 md:px-16 lg:px-24 xl:px-32">
+    <div className="flex flex-col max-md:gap-20 md:flex-row items-center justify-between py-8 md:py-12 mt-0 px-4 md:px-16 lg:px-24 xl:px-32">
         <div className="flex flex-col items-center md:items-start">
             <h1 className="text-center md:text-left text-4xl leading-11.5 md:text-5xl md:leading-17 font-semibold max-w-xl text-slate-900">
                 {props.heading}
@@ -19,7 +19,7 @@ const Hero = (props) => {
                 </button>
             </div>
         </div>
-        <img src={props.heroImage} alt="hero" className="hidden sm:block sm:max-w-sm lg:max-w-xl 2xl:max-w-2xl animate-breathe transition-all duration-300"/>
+        <img src={props.heroImage} alt="hero" className="hidden sm:block sm:max-w-sm lg:max-w-lg 2xl:max-w-2xl animate-breathe transition-all duration-300"/>
     </div>
   )
 }
