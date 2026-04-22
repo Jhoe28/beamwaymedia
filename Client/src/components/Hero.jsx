@@ -3,12 +3,12 @@ import assets from '../assets/assets'
 
 const Hero = (props) => {
   return (
-    <div className="flex flex-col max-md:gap-20 md:flex-row items-start justify-between py-16 md:py-12 mt-0 px-4 md:px-16 lg:px-24 xl:px-32">
-        <div className="flex flex-col items-start md:items-start">
-            <h1 className="text-left md:text-left text-5xl leading-11.5 md:text-5xl md:leading-17 font-semibold max-w-xl text-slate-900">
+    <div className="flex flex-col max-md:gap-20 md:flex-row items-start justify-between py-16 md:py-24 mt-0 px-4 md:px-16 lg:px-24 xl:px-32">
+        <div className="flex flex-col gap-4 md:gap-8 items-start">
+            <h1 className="text-left text-5xl leading-20 md:leading-14 font-semibold max-w-xl min-[950px]:max-w-xl max-[950px]:max-w-full text-slate-900">
                 {props.heading}
             </h1>
-            <p className="text-left md:text-left text-sm text-slate-700 max-w-lg mt-2">
+            <p className="text-left text-sm text-slate-700 max-w-lg max-[950px]:max-w-full mt-2">
                 {props.subheading}
                 <br/><br/>
                 {props.positioning}
@@ -19,7 +19,7 @@ const Hero = (props) => {
                 </button>
             </div>
         </div>
-        <img src={props.heroImage} alt="hero" className="hidden sm:block sm:max-w-sm lg:max-w-lg 2xl:max-w-2xl animate-breathe transition-all duration-300"/>
+        <img src={props.heroImage} alt="hero" className="hidden min-[950px]:block min-[950px]:w-[350px] lg:w-[450px] animate-breathe transition-all duration-300"/>
     </div>
   )
 }

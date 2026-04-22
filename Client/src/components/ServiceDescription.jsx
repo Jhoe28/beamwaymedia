@@ -12,7 +12,7 @@ const ServiceDescription = ({ icon, title, description, accentImg }) => {
                 <p>{description}</p>
             </div>
             <div className='flex items-center justify-end'>
-                <img src={accentImg} alt={title} className='w-24' />
+                <img src={accentImg} alt={title} className='w-46' />
             </div>
         </div>
     </>
