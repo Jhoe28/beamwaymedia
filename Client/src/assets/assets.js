@@ -20,14 +20,26 @@ import accentImg_7 from './accentImg_7.png'
 import accentImg_8 from './accentImg_8.png'
 import emailIcon from './emailIcon.png'
 import arrowDown from './arrowDown.png'
+import instagram from './instagram.png'
+import x from './x.png'
+import linkedin from './linkedin.png'
+import tiktok from './tiktok.png'
+import canva from './canva.jpg'
+import cta from './cta.jpg'
 
 const assets = {
     Logo: logo,
+    X: x,
+    Instagram: instagram,
+    Linkedin: linkedin,
+    Tiktok: tiktok,
     HeroBg: heroBg,
     About_1: about_1,
     Projects: projects,
     EmailIcon: emailIcon,
     ArrowDown: arrowDown,
+    AccentImg_1: accentImg_1,
+    Cta: cta
 }
 
 export default assets
@@ -99,4 +111,164 @@ const serviceData = [
     }
 ]
 
-export { serviceData }
+const marqueeData = [
+  {
+    id: 1,
+    image: 'https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=200',
+    name: 'Briar Martin',
+    handle: '@neilstellar',
+    date: 'April 20, 2025',
+    review: 'Beamway Media transformed our brand presence completely!'
+  },
+  {
+    id: 2,
+    image: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=200',
+    name: 'Avery Johnson',
+    handle: '@averywrites',
+    date: 'May 10, 2025',
+    review: 'Our social media engagement went through the roof after working with them.'
+  },
+  {
+    id: 3,
+    image: 'https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=200',
+    name: 'Jordan Lee',
+    handle: '@jordantalks',
+    date: 'June 5, 2025',
+    review: 'The best marketing decision we ever made was partnering with Beamway.'
+  },
+  {
+    id: 4,
+    image: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=200',
+    name: 'Marcus Reid',
+    handle: '@marcusreid',
+    date: 'May 10, 2025',
+    review: 'Clear strategy, consistent execution. Exactly what we needed.'
+  },
+]
+
+const stack = [
+    {
+        id: 1,
+        img:canva,
+        alt: 'Canva',
+    },
+    
+    {
+        id: 2,
+        img:canva,
+        alt: 'Canva',
+    },
+    {
+        id: 3,
+        img:canva,
+        alt: 'Canva',
+    },
+    {
+        id: 4,
+        img:canva,
+        alt: 'Canva',
+    },
+    {
+        id: 5,
+        img:canva,
+        alt: 'Canva',
+    },
+    {
+        id: 6,
+        img:canva,
+        alt: 'Canva',
+    },
+    {
+        id: 7,
+        img:canva,
+        alt: 'Canva',
+    },
+    {
+        id: 8,
+        img:canva,
+        alt: 'Canva',
+    },
+    {
+        id: 9,
+        img:canva,
+        alt: 'Canva',
+    },
+    {
+        id: 10,
+        img:canva,
+        alt: 'Canva',
+    },
+    {
+        id: 11,
+        img:canva,
+        alt: 'Canva',
+    },
+    {
+        id: 12,
+        img:canva,
+        alt: 'Canva',
+    },
+    {
+        id: 13,
+        img:canva,
+        alt: 'Canva',
+    },
+    {
+        id: 14,
+        img:canva,
+        alt: 'Canva',
+    },
+    {
+        id: 15,
+        img:canva,
+        alt: 'Canva',
+    },
+    {
+        id: 16,
+        img:canva,
+        alt: 'Canva',
+    },
+    {
+        id: 17,
+        img:canva,
+        alt: 'Canva',
+    },
+    {
+        id: 18,
+        img:canva,
+        alt: 'Canva',
+    },
+    {
+        id: 19,
+        img:canva,
+        alt: 'Canva',
+    },
+    {
+        id: 20,
+        img:canva,
+        alt: 'Canva',
+    },
+    {
+        id: 21,
+        img:canva,
+        alt: 'Canva',
+    },
+    {
+        id: 22,
+        img:canva,
+        alt: 'Canva',
+    },
+    {
+        id: 23,
+        img:canva,
+        alt: 'Canva',
+    },
+    {
+        id: 24,
+        img:canva,
+        alt: 'Canva',
+    },
+
+]
+
+export { serviceData, marqueeData, stack }

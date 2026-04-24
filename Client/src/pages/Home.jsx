@@ -5,6 +5,10 @@ import { Link } from 'react-router-dom'
 import ServiceTitle from '../components/ServiceTitle'
 import { serviceData } from '../assets/assets'
 import ServiceDescription from '../components/ServiceDescription'
+import ContactForm from '../components/ContactForm'
+import CreativeStack from '../components/CreativeStack'
+import CallToAction from '../components/CallToAction'
+import TrustedBy from '../components/TrustedBy'
 
 const Home = () => {
   const [activeId, setActiveId] = useState(1)
@@ -15,6 +19,7 @@ const Home = () => {
         subheading="We build creative marketing systems using content, branding, and strategy that improve how your brand is seen, understood, and positioned for growth and sales." 
         positioning="A creative media agency focused on clarity, structure, and intentional storytelling." 
         heroImage={assets.HeroBg} 
+        ctaText="Start Your Brand Journey here!"
       />
 
       {/* Second Section */}
@@ -36,14 +41,15 @@ const Home = () => {
         positioning="At Beamway, we combine content, branding, and marketing systems to help brands express themselves better and connect with the right audience in a meaningful way. We care about how things are done, not just what is delivered.
         Every project is treated with structure, thought, and creative direction that aligns with long-term growth."
         heroImage={assets.About_1}
+        ctaText="Learn More About Us"
       />
 
       {/* Forth Section */}
-      <div className='flex flex-col justify-around gap-50 bg-gray-200 relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-gray-600 px-4 md:px-16 lg:px-24 xl:px-32 py-6 sm:py-12 md:py-16 lg:py-24 xl:py-32'>
+      <div className='flex flex-col justify-around gap-50 bg-gray-200 relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-gray-600 px-4 md:px-16 lg:px-24 xl:px-32 py-6 md:py-12 lg:py-16'>
         <h1 className='text-6xl'>Our Impact</h1>
 
         <div className="grid max-[832px]:grid-cols-1 max-[1023px]:grid-cols-2 min-[1024px]:grid-cols-4 gap-8">
-          <div style={{backgroundImage: `url(${assets.Projects})`}} className="relative border bg-center bg-cover bg-no-repeat max[1023px]:translate-y-0 -translate-y-12 border-zinc-200 hover:border-zinc-300 transition-colors rounded-xl p-6 flex flex-col justify-between h-[350px] group">
+          <div style={{backgroundImage: `url(${assets.Projects})`}} className="relative border bg-center bg-cover bg-no-repeat border-zinc-200 hover:border-zinc-300 transition-colors rounded-xl p-6 flex flex-col justify-between h-[350px] group">
             {/* Dark gradient overlay */}
             <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-black/90 via-black/70 to-black/30 group-hover:from-black/70 group-hover:via-black/50 group-hover:to-black/20 transition-all duration-300" />
             
@@ -51,7 +57,7 @@ const Home = () => {
             <p className="text-xl text-right text-white relative z-10">Projects <br/>In Progress</p>
             <p className="text-2xl text-neutral-200 mb-2 px-2 relative z-10"><span className="font-medium text-7xl">12+</span></p>
           </div>
-          <div style={{backgroundImage: `url(${assets.Projects})`}} className="relative border bg-center bg-cover bg-no-repeat translate-y-12 border-zinc-200 hover:border-zinc-300 transition-colors rounded-xl p-6 flex flex-col justify-between h-[350px] group">
+          <div style={{backgroundImage: `url(${assets.Projects})`}} className="relative border bg-center bg-cover bg-no-repeat border-zinc-200 hover:border-zinc-300 transition-colors rounded-xl p-6 flex flex-col justify-between h-[350px] group">
             {/* Dark gradient overlay */}
             <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-black/90 via-black/70 to-black/30 group-hover:from-black/70 group-hover:via-black/50 group-hover:to-black/20 transition-all duration-300" />
             
@@ -59,7 +65,7 @@ const Home = () => {
             <p className="text-xl text-right text-white relative z-10">Brands <br/>Supported</p>
             <p className="text-2xl text-neutral-200 mb-2 px-2 relative z-10"><span className="font-medium text-7xl">8+</span></p>
           </div>
-          <div style={{backgroundImage: `url(${assets.Projects})`}} className="relative border bg-center bg-cover bg-no-repeat -translate-y-14 border-zinc-200 hover:border-zinc-300 transition-colors rounded-xl p-6 flex flex-col justify-between h-[350px] group">
+          <div style={{backgroundImage: `url(${assets.Projects})`}} className="relative border bg-center bg-cover bg-no-repeat border-zinc-200 hover:border-zinc-300 transition-colors rounded-xl p-6 flex flex-col justify-between h-[350px] group">
             {/* Dark gradient overlay */}
             <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-black/90 via-black/70 to-black/30 group-hover:from-black/70 group-hover:via-black/50 group-hover:to-black/20 transition-all duration-300" />
             
@@ -67,7 +73,7 @@ const Home = () => {
             <p className="text-xl text-right text-white relative z-10">Content <br/>Pieces Created</p>
             <p className="text-2xl text-neutral-200 mb-2 px-2 relative z-10"><span className="font-medium text-7xl">100+</span></p>
           </div>
-          <div style={{backgroundImage: `url(${assets.Projects})`}} className="relative border bg-center bg-cover bg-no-repeat translate-y-16 border-zinc-200 hover:border-zinc-300 transition-colors rounded-xl p-6 flex flex-col justify-between h-[350px] group">
+          <div style={{backgroundImage: `url(${assets.Projects})`}} className="relative border bg-center bg-cover bg-no-repeat border-zinc-200 hover:border-zinc-300 transition-colors rounded-xl p-6 flex flex-col justify-between h-[350px] group">
             {/* Dark gradient overlay */}
             <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-black/90 via-black/70 to-black/30 group-hover:from-black/70 group-hover:via-black/50 group-hover:to-black/20 transition-all duration-300" />
             
@@ -80,7 +86,7 @@ const Home = () => {
       </div>
 
       {/* Fifth Section */}
-      <div className='px-2 md:px-2 lg:px-6 xl:px-12 max-[826px]:py-16 lg:py-12'>
+      <div className='border-b-2 border-b-gray-300 px-2 md:px-2 lg:px-6 pt-6 xl:px-12 max-[826px]:py-16 lg:py-12'>
         <div className='grid grid-cols-1 md:grid-cols-3 gap-8 pb-6 px-6 md:px-6 lg:px-12 xl:px-16 max-[826px]:hidden border-b border-gray-300'>
           <div className='flex items-center gap-4'>
             <img src={assets.ArrowDown} alt="Arrow Down" className="max-w-5" />
@@ -107,6 +113,11 @@ const Home = () => {
           />
         ))}
       </div>
+
+      <CreativeStack />
+      <CallToAction />
+      <ContactForm />
+      <TrustedBy />
     </>
   )
 }
