@@ -13,11 +13,14 @@ const Hero = (props) => {
                 <br/><br/>
                 {props.positioning}
             </p>
-            <div className="flex items-center gap-4 mt-8 text-sm">
-                <button className="bg-accent hover:bg-black hover:text-white text-white active:scale-95 transition rounded-md px-7 h-11">
-                    {props.ctaText}
-                </button>
-            </div>
+            {props.ctaText && (
+                <div className="flex items-center gap-4 mt-8 text-sm">
+                    <button className="bg-accent hover:bg-black hover:text-white text-white active:scale-95 transition rounded-md px-7 h-11">
+                        {props.ctaText}
+                    </button>
+                </div>
+            )}
+
         </div>
         <img src={props.heroImage} alt="hero" className="scroll-animate hidden min-[950px]:block min-[950px]:w-[350px] lg:w-[450px] animate-breathe transition-all duration-300"/>
     </div>

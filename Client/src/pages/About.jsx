@@ -7,7 +7,10 @@ import TrustedBy from '../components/TrustedBy'
 const About = () => {
   return (
     <div>
-      <Hero heading="Who We Are" heroImage={assets.AccentImg_1} />
+      <Hero 
+      heading="Who We Are"
+      subheading="At Beamway we do not manage platforms, we manage perceptions. And we do it with clarity, creativity and intentions that serious brands deserve"
+      heroImage={assets.AccentImg_1} />
       <Hero 
         heading="Who We Are" 
         subheading="Beamway Media is a creative media and marketing company focused on helping brands communicate with clarity and direction.
@@ -20,7 +23,7 @@ const About = () => {
       />
 
 
-      <ContactForm />
+      <ContactForm />#
       <TrustedBy />
     </div>
   )
