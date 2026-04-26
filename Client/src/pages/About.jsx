@@ -23,7 +23,7 @@ const About = () => {
       />
 
 
-      <ContactForm />#
+      <ContactForm />
       <TrustedBy />
     </div>
   )
