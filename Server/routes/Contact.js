@@ -5,7 +5,7 @@ import Contact from '../models/Contact.js';
 const router = express.Router();
 
 router.post('/contact', async (req, res) => {
-    console.log('Request body:', req.body) // temporary debug line
+    // console.log('Request body:', req.body)
     const { firstname, lastname, email, phone, message } = req.body
 
     try {
