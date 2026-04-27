@@ -5,16 +5,16 @@ const Hero = (props) => {
   return (
     <div className="flex flex-col max-md:gap-20 md:flex-row items-start justify-between py-16 md:py-24 mt-0 px-4 md:px-16 lg:px-24 xl:px-32">
         <div className="flex flex-col gap-4 md:gap-8 items-start">
-            <h1 className="text-left text-5xl leading-20 md:leading-14 font-semibold max-w-xl min-[950px]:max-w-xl max-[950px]:max-w-full text-slate-900">
+            <h1 className="text-left text-5xl leading-14 md:leading-14 font-semibold max-w-xl min-[950px]:max-w-xl max-[950px]:max-w-full text-slate-900">
                 {props.heading}
             </h1>
-            <p className="text-left text-sm text-slate-700 max-w-lg max-[950px]:max-w-full mt-2">
+            <p className="text-left text-sm text-slate-700 max-w-lg max-[950px]:max-w-full mt-0 md:mt-2">
                 {props.subheading}
                 <br/><br/>
                 {props.positioning}
             </p>
             {props.ctaText && (
-                <div className="flex items-center gap-4 mt-8 text-sm">
+                <div className="flex items-center gap-4 mt-0 md:mt-8 text-sm">
                     <button className="bg-accent hover:bg-black hover:text-white text-white active:scale-95 transition rounded-md px-7 h-11">
                         {props.ctaText}
                     </button>

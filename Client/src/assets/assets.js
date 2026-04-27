@@ -110,6 +110,50 @@ const serviceData = [
         accentImg: accentImg_8,
     }
 ]
+const aboutData = [
+    {
+        id: 1,
+        title2: "Brilliance in Thinking",
+        p: "B",
+        description2: "We approach every brand with clarity, depth, and intentional thinking."
+    },
+    {
+        id: 2,
+        title2: "Execution with Intent",
+        p: "E",
+        description2: "Every idea is translated into structured and purposeful execution."
+    },
+    {
+        id: 3,
+        title2: "Alignment of Message",
+        p: "A",
+        description2: "We ensure brand voice, content, and positioning stay consistent."
+    },
+    {
+        id: 4,
+        title2: "Meaningful Storytelling",
+        p: "M",
+        description2: "We help brands communicate in a way that is clear and human."
+    },
+    {
+        id: 5,
+        title2: "Worthwhile Visibility",
+        p: "W",
+        description2: "We focus on visibility that attracts the right audience, not just attention."
+    },
+    {
+        id: 6,
+        title2: "Audience Understanding",
+        p: "A",
+        description2: "We build communication that connects with the right people."
+    },
+    {
+        id: 7,
+        title2: "Yielding Growth",
+        p: "Y",
+        description2: "Everything we do is aimed at clarity, trust, and sustainable growth."
+    }
+]
 
 const marqueeData = [
   {
@@ -271,4 +315,4 @@ const stack = [
 
 ]
 
-export { serviceData, marqueeData, stack }
+export { serviceData, marqueeData, stack, aboutData }
