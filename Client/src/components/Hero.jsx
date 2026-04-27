@@ -7,6 +7,9 @@ const Hero = (props) => {
         <div className="flex flex-col gap-4 md:gap-8 items-start">
             <h1 className="text-left text-5xl leading-14 md:leading-14 font-semibold max-w-xl min-[950px]:max-w-xl max-[950px]:max-w-full text-slate-900">
                 {props.heading}
+                {props.accentHeading && (
+                    <span className="text-accent block">{props.accentHeading}</span>
+                )}
             </h1>
             <p className="text-left text-sm text-slate-700 max-w-lg max-[950px]:max-w-full mt-0 md:mt-2">
                 {props.subheading}

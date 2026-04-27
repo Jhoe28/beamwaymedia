@@ -13,7 +13,7 @@ const MarqueeRow = ({ reverse }) => {
       {/* Scrolling content */}
       <div className={`flex min-w-[200%] py-4 ${reverse ? 'animate-marquee-reverse' : 'animate-marquee'}`}>
         {doubled.map((stackItem, index) => (
-          <MarqueeCard key={stackItem.id} img={stackItem.img} alt={stackItem.alt} />
+          <MarqueeCard key={`stack-${index}`} img={stackItem.img} alt={stackItem.alt} />
         ))}
       </div>
 
