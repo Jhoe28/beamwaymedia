@@ -31,7 +31,7 @@ const About = () => {
         <div className="grid max-[832px]:grid-cols-1 max-[1023px]:grid-cols-2 min-[1024px]:grid-cols-4 gap-8">
           <div style={{backgroundImage: `url(${assets.Projects})`}} className="relative border bg-center bg-cover bg-no-repeat border-zinc-200 hover:border-zinc-300 transition-colors rounded-xl p-6 flex flex-col justify-between h-[350px] group">
             {/* Dark gradient overlay */}
-            <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-black/95 via-black/80 to-black/50 group-hover:from-black/80 group-hover:via-black/60 group-hover:to-black/40 transition-all duration-400" />
+            <div className="absolute inset-0 rounded-xl bg-linear-to-t from-black/95 via-black/80 to-black/50 group-hover:from-black/80 group-hover:via-black/60 group-hover:to-black/40 transition-all duration-400" />
             
             {/* Content stays on top */}
             <p className="text-xl text-right text-white relative z-10">Projects <br/>In Progress</p>
@@ -39,7 +39,7 @@ const About = () => {
           </div>
           <div style={{backgroundImage: `url(${assets.Projects})`}} className="relative border bg-center bg-cover bg-no-repeat border-zinc-200 hover:border-zinc-300 transition-colors rounded-xl p-6 flex flex-col justify-between h-[350px] group">
             {/* Dark gradient overlay */}
-            <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-black/95 via-black/80 to-black/50 group-hover:from-black/80 group-hover:via-black/60 group-hover:to-black/40 transition-all duration-400" />
+            <div className="absolute inset-0 rounded-xl bg-linear-to-t from-black/95 via-black/80 to-black/50 group-hover:from-black/80 group-hover:via-black/60 group-hover:to-black/40 transition-all duration-400" />
             
             {/* Content stays on top */}
             <p className="text-xl text-right text-white relative z-10">Brands <br/>Supported</p>
@@ -47,7 +47,7 @@ const About = () => {
           </div>
           <div style={{backgroundImage: `url(${assets.Projects})`}} className="relative border bg-center bg-cover bg-no-repeat border-zinc-200 hover:border-zinc-300 transition-colors rounded-xl p-6 flex flex-col justify-between h-[350px] group">
             {/* Dark gradient overlay */}
-            <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-black/95 via-black/80 to-black/50 group-hover:from-black/80 group-hover:via-black/60 group-hover:to-black/40 transition-all duration-400" />
+            <div className="absolute inset-0 rounded-xl bg-linear-to-t from-black/95 via-black/80 to-black/50 group-hover:from-black/80 group-hover:via-black/60 group-hover:to-black/40 transition-all duration-400" />
             
             {/* Content stays on top */}
             <p className="text-xl text-right text-white relative z-10">Content <br/>Pieces Created</p>
@@ -55,7 +55,7 @@ const About = () => {
           </div>
           <div style={{backgroundImage: `url(${assets.Projects})`}} className="relative border bg-center bg-cover bg-no-repeat border-zinc-200 hover:border-zinc-300 transition-colors rounded-xl p-6 flex flex-col justify-between h-[350px] group">
             {/* Dark gradient overlay */}
-            <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-black/95 via-black/80 to-black/50 group-hover:from-black/80 group-hover:via-black/60 group-hover:to-black/40 transition-all duration-400" />
+            <div className="absolute inset-0 rounded-xl bg-linear-to-t from-black/95 via-black/80 to-black/50 group-hover:from-black/80 group-hover:via-black/60 group-hover:to-black/40 transition-all duration-400" />
             
             {/* Content stays on top */}
             <p className="text-xl text-right text-white relative z-10">Strategy Sessions <br/>Delivered</p>
