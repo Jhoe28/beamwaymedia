@@ -24,8 +24,32 @@ import instagram from './instagram.png'
 import x from './x.png'
 import linkedin from './linkedin.png'
 import tiktok from './tiktok.png'
-import canva from './canva.jpg'
+import canva from './canva.png'
 import cta from './cta.jpg'
+import adobeCloud from './adobeCloud.png'
+import analytics from './analytics.png'
+import apollo from './apollo.png'
+import capcut from './capcut.png'
+import claude from './claude.png'
+import clickup from './clickup.png'
+import docs from './docs.png'
+import figma from './figma.png'
+import gohighlevel from './gohighlevel.png'
+import grammarly from './grammarly.png'
+import hootsuite from './hootsuite.png'
+import hubspot from './hubspot.png'
+import mailchimp from './mailchimp.png'
+import meta from './meta.png'
+import notion from './notion.png'
+import photoshop from './photoshop.png'
+import powerpoint from './powerpoint.jpg'
+import sheets from './sheets.png'
+import slack from './slack.png'
+import trello from './trello.png'
+import vscode from './vsCode.jpg'
+import workspace from './workspace.png'
+import zapier from './zapier.png'
+import zoho from './zoho.jpg'
 
 const assets = {
     Logo: logo,
@@ -199,98 +223,98 @@ const stack = [
     
     {
         id: 2,
-        img:canva,
-        alt: 'Canva',
+        img: adobeCloud,
+        alt: 'Adobe Cloud',
     },
     {
         id: 3,
-        img:canva,
-        alt: 'Canva',
+        img: analytics,
+        alt: 'Analytics',
     },
     {
         id: 4,
-        img:canva,
-        alt: 'Canva',
+        img: apollo,
+        alt: 'Apollo',
     },
     {
         id: 5,
-        img:canva,
-        alt: 'Canva',
+        img: capcut,
+        alt: 'Capcut',
     },
     {
         id: 6,
-        img:canva,
-        alt: 'Canva',
+        img: claude,
+        alt: 'Claude',
     },
     {
         id: 7,
-        img:canva,
-        alt: 'Canva',
+        img: clickup,
+        alt: 'Clickup',
     },
     {
         id: 8,
-        img:canva,
-        alt: 'Canva',
+        img: docs,
+        alt: 'Docs',
     },
     {
         id: 9,
-        img:canva,
-        alt: 'Canva',
+        img: figma,
+        alt: 'Figma',
     },
     {
         id: 10,
-        img:canva,
-        alt: 'Canva',
+        img: gohighlevel,
+        alt: 'GoHighLevel',
     },
     {
         id: 11,
-        img:canva,
-        alt: 'Canva',
+        img: grammarly,
+        alt: 'Grammarly',
     },
     {
         id: 12,
-        img:canva,
-        alt: 'Canva',
+        img: hootsuite,
+        alt: 'Hootsuite',
     },
     {
         id: 13,
-        img:canva,
-        alt: 'Canva',
+        img: hubspot,
+        alt: 'Hubspot',
     },
     {
         id: 14,
-        img:canva,
-        alt: 'Canva',
+        img: mailchimp,
+        alt: 'Mailchimp',
     },
     {
         id: 15,
-        img:canva,
-        alt: 'Canva',
+        img: meta,
+        alt: 'Meta',
     },
     {
         id: 16,
-        img:canva,
-        alt: 'Canva',
+        img: notion,
+        alt: 'Notion',
     },
     {
         id: 17,
-        img:canva,
-        alt: 'Canva',
+        img: photoshop,
+        alt: 'Photoshop',
     },
     {
         id: 18,
-        img:canva,
-        alt: 'Canva',
+        img: powerpoint,
+        alt: 'Powerpoint',
     },
     {
         id: 19,
-        img:canva,
-        alt: 'Canva',
+        img: sheets,
+        alt: 'Sheets',
     },
     {
         id: 20,
-        img:canva,
-        alt: 'Canva',
+        img: slack,
+        alt: 'Slack',
     },
     {
         id: 21,
@@ -299,18 +323,28 @@ const stack = [
     },
     {
         id: 22,
-        img:canva,
-        alt: 'Canva',
+        img: trello,
+        alt: 'Trello',
     },
     {
         id: 23,
-        img:canva,
-        alt: 'Canva',
+        img: vscode,
+        alt: 'Vscode',
     },
     {
         id: 24,
-        img:canva,
-        alt: 'Canva',
+        img: workspace,
+        alt: 'Workspace',
+    },
+    {
+        id: 25,
+        img: zapier,
+        alt: 'Zapier',
+    },
+    {
+        id: 26,
+        img: zoho,
+        alt: 'Zoho',
     },
 
 ]

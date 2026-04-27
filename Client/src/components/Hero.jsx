@@ -3,15 +3,15 @@ import assets from '../assets/assets'
 
 const Hero = (props) => {
   return (
-    <div className="flex flex-col max-md:gap-20 md:flex-row items-start justify-between py-16 md:py-24 mt-0 px-4 md:px-16 lg:px-24 xl:px-32">
-        <div className="flex flex-col gap-4 md:gap-8 items-start">
-            <h1 className="text-left text-5xl leading-14 md:leading-14 font-semibold max-w-xl min-[950px]:max-w-xl max-[950px]:max-w-full text-slate-900">
+    <div className={`flex flex-col max-md:gap-20 md:flex-row justify-between py-16 md:py-24 mt-0 px-4 md:px-16 lg:px-24 xl:px-32 ${props.className || ''}`}>
+        <div className={`flex flex-col gap-4 h-full md:gap-8 ${props.contentClassName || 'items-start'}`}>
+            <h1 className={`text-5xl leading-14 font-semibold max-w-xl min-[950px]:max-w-xl max-[950px]:max-w-full text-slate-900 ${props.headingClassName || 'text-left'}`}>
                 {props.heading}
                 {props.accentHeading && (
                     <span className="text-accent block">{props.accentHeading}</span>
                 )}
             </h1>
-            <p className="text-left text-sm text-slate-700 max-w-lg max-[950px]:max-w-full mt-0 md:mt-2">
+            <p className={`text-sm text-slate-700 max-w-lg max-[950px]:max-w-full mt-0 md:mt-2 ${props.textClassName || 'text-left'}`}>
                 {props.subheading}
                 <br/><br/>
                 {props.positioning}
@@ -23,7 +23,6 @@ const Hero = (props) => {
                     </button>
                 </div>
             )}
-
         </div>
         <img src={props.heroImage} alt="hero" className="scroll-animate hidden min-[950px]:block min-[950px]:w-[350px] lg:w-[450px] animate-breathe transition-all duration-300"/>
     </div>

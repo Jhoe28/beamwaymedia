@@ -87,8 +87,8 @@ const Home = () => {
       </div>
 
       {/* Fifth Section */}
-      <div className='border-b-2 border-b-gray-300 px-2 md:px-2 lg:px-6 pt-6 xl:px-12 max-[826px]:py-16 lg:py-12'>
-        <div className='grid grid-cols-1 md:grid-cols-3 gap-8 pb-6 px-6 md:px-6 lg:px-12 xl:px-16 max-[826px]:hidden border-b border-gray-300'>
+      <div className='border-b-2 border-b-gray-300 pt-6 max-[826px]:py-16 lg:py-12'>
+        <div className='grid grid-cols-1 md:grid-cols-3 gap-8 pb-6 px-4 md:px-12 lg:px-16 xl:px-24 max-[826px]:hidden border-b border-gray-300'>
           <div className='flex items-center gap-4'>
             <img src={assets.ArrowDown} alt="Arrow Down" className="max-w-5" />
             <p>Services</p>

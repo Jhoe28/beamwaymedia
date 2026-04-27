@@ -1,21 +1,54 @@
-import React from 'react'
-import { useState } from 'react'
-import {Link} from 'react-router-dom'
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import assets from '../../assets/assets'
+import { serviceData } from '../../assets/assets'
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false)
+  const [servicesOpen, setServicesOpen] = useState(false)
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false)
+
   return (
-    <nav className="h-[70px] relative w-full px-6 md:px-12 lg:px-16 xl:px-24 flex items-center justify-between z-20 bg-transparent text-gray-700 shadow-[0px_4px_25px_0px_#0000000D] transition-all">
+    <nav className="h-[70px] relative w-full px-6 md:px-12 lg:px-16 xl:px-24 flex items-center justify-between z-20 bg-white text-gray-700 shadow-[0px_4px_25px_0px_#0000000D] transition-all">
             
         <a href="/">
             <img src={assets.Logo} alt="logo" className="w-40 h-auto" />
         </a>
 
+        {/* Desktop Menu */}
         <ul className="md:flex hidden items-center md:gap-8 lg:gap-12 xl:gap-16">
-            <li><Link to="/" className="nav-link  transition">HOME</Link></li>
+            <li><Link to="/" className="nav-link transition">HOME</Link></li>
             <li><Link to="/about" className="nav-link transition">ABOUT US</Link></li>
-            <li><Link to="/services" className="nav-link transition">OUR SERVICES</Link></li>
+            
+            {/* Services with dropdown */}
+            <li 
+                className="relative"
+                onMouseEnter={() => setServicesOpen(true)}
+                onMouseLeave={() => setServicesOpen(false)}
+            >
+                <Link to="/services" className="nav-link transition flex items-center gap-1">
+                    OUR SERVICES
+                    <span className={`text-xs transition-transform duration-200 ${servicesOpen ? 'rotate-180' : ''}`}>
+                        ▼
+                    </span>
+                </Link>                
+                {/* Desktop Dropdown */}
+                {servicesOpen && (
+                    <div className="absolute top-full left-0 w-64 bg-white shadow-xl rounded-lg py-4 z-50 border border-gray-100">
+                        {serviceData.map((service) => (
+                            <Link
+                                key={service.id}
+                                to={`/services/${service.slug}`}
+                                className="flex items-center gap-3 px-5 py-3 hover:bg-gray-50 transition-colors text-sm font-medium text-gray-700 hover:text-accent"
+                            >
+                                <img src={service.img} alt={service.title} className="w-6 h-6 mix-blend-multiply" />
+                                {service.title}
+                            </Link>
+                        ))}
+                    </div>
+                )}
+            </li>
+
             <li><Link to="/contact" className="nav-link transition">CONTACT US</Link></li>
         </ul>
 
@@ -33,18 +66,45 @@ const Navbar = () => {
             </button>
         </div>
 
+        {/* Mobile Menu */}
         {menuOpen && (
-            <div className="mobile-menu absolute top-[70px] left-0 w-full bg-white p-6">
+            <div className="mobile-menu absolute top-[70px] left-0 w-full bg-white p-6 shadow-lg z-50">
                 <ul className="flex flex-col space-y-4 text-lg">
-                    <li><Link to="/" className="text-sm">HOME</Link></li>
-                    <li><Link to="/about" className="text-sm">ABOUT US</Link></li>
-                    <li><Link to="/services" className="text-sm">OUR SERVICES</Link></li>
-                    <li><Link to="/contact" className="text-sm">CONTACT US</Link></li>
+                    <li><Link to="/" className="text-sm" onClick={() => setMenuOpen(false)}>HOME</Link></li>
+                    <li><Link to="/about" className="text-sm" onClick={() => setMenuOpen(false)}>ABOUT US</Link></li>
+                    
+                    {/* Mobile Services Dropdown */}
+                    <li>
+                        <button 
+                            onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
+                            className="text-sm flex items-center gap-2 w-full text-left"
+                        >
+                            OUR SERVICES
+                            <span className={`transition-transform duration-200 ${mobileServicesOpen ? 'rotate-180' : ''}`}>▼</span>
+                        </button>
+                        {mobileServicesOpen && (
+                            <ul className="mt-2 ml-4 flex flex-col space-y-2">
+                                {serviceData.map((service) => (
+                                    <li key={service.id}>
+                                        <Link
+                                            to={`/services/${service.slug}`}
+                                            className="text-sm flex items-center gap-2 text-gray-600 hover:text-accent py-1"
+                                            onClick={() => { setMenuOpen(false); setMobileServicesOpen(false) }}
+                                        >
+                                            <img src={service.img} alt={service.title} className="w-5 h-5 mix-blend-multiply" />
+                                            {service.title}
+                                        </Link>
+                                    </li>
+                                ))}
+                            </ul>
+                        )}
+                    </li>
+
+                    <li><Link to="/contact" className="text-sm" onClick={() => setMenuOpen(false)}>CONTACT US</Link></li>
                 </ul>
             </div>
         )}
     </nav>
-
   )
 }
 

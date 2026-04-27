@@ -10,9 +10,10 @@ const About = () => {
   return (
     <div>
       <Hero 
-        heading="Who We Are"
-        subheading="At Beamway we do not manage platforms, we manage perceptions. And we do it with clarity, creativity and intentions that serious brands deserve"
-        heroImage={assets.AccentImg_1} 
+          heading="Who We Are"
+          subheading="At Beamway we do not manage platforms, we manage perception. And we do it with the clarity, creativity, and intention that every serious bramds deserve"
+          heroImage={assets.AccentImg_1}
+          className="min-[767px]:items-end max-[767px]:justify-end min-h-[30vh]"
       />
       <Hero 
         heading="Who We Are" 
@@ -23,6 +24,7 @@ const About = () => {
         Every project is treated with structure, thought, and creative direction that aligns with long-term growth."
         heroImage={assets.About_1}
         ctaText="Learn More About Us"
+        className="bg-gray-100"
       />
 
       <div className='flex flex-col justify-around gap-20 bg-gray-200 relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-gray-600 px-4 md:px-16 lg:px-24 xl:px-32 py-6 md:py-12 lg:py-16'>
