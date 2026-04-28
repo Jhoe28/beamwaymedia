@@ -26,7 +26,7 @@ const Navbar = () => {
                 onMouseEnter={() => setServicesOpen(true)}
                 onMouseLeave={() => setServicesOpen(false)}
             >
-                <Link to="/services" className="nav-link transition flex items-center gap-1">
+                <Link to="/about" className="nav-link transition flex items-center gap-1">
                     OUR SERVICES
                     <span className={`text-xs transition-transform duration-200 ${servicesOpen ? 'rotate-180' : ''}`}>
                         ▼

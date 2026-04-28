@@ -90,6 +90,15 @@ const About = () => {
 
       </div>
 
+      <div className='px-4 md:px-12 lg:px-16 xl:px-24 py-6 md:py-12 lg:py-16 xl:py-24'>
+        <p className='font-medium text-center'>
+            In a world saturated with content, the problem is not that brands are invisible it is that they have not been made clear. Most organisations communicate loudly without saying anything that sticks. They produce content without direction, campaigns without context, and visibility without meaning.
+            Beamway Media was built on a different conviction: that deep strategic thinking, when combined with genuine creative craft, produces communication that does not just reach people it moves them.<br/><br/> We believe in work that carries weight, earns trust, and builds something worth being seen for.
+            Storytelling is not a department or a format for us. It is the lens through which every brand decision should be made. A well-told story changes how audiences feel, how they remember, and ultimately how they act.
+            Strategy is not an afterthought here. It is the first conversation, the architecture on which creative is built. Without it, even the most beautiful work gets lost. With it, even simple content becomes a competitive advantage.
+        </p>
+      </div>
+
 
 
       <ContactForm />
