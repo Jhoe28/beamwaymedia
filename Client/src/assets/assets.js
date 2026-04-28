@@ -46,7 +46,7 @@ import powerpoint from './powerpoint.jpg'
 import sheets from './sheets.png'
 import slack from './slack.png'
 import trello from './trello.png'
-import vscode from './vsCode.png'
+import vscode from './vscode.png'
 import workspace from './workspace.png'
 import zapier from './zapier.png'
 import zoho from './zoho.jpg'
@@ -131,7 +131,7 @@ const serviceData = [
         title: "PR & Communication",
         img: consultancyIcon,
         description: "We manage and shape how your brand is perceived publicly through consistent messaging, strategic communication, and positioning that builds trust and strengthens reputation.",
-        accentImg: accentImg_8,
+        accentImg: accentImg_8
     }
 ]
 const aboutData = [

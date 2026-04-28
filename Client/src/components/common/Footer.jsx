@@ -43,7 +43,7 @@ const Footer = () => {
                 </div>
             </div>
             <p className="pt-4 text-center text-sm pb-5">
-                Copyright {new Date().getFullYear()} © <a href="https://prebuiltui.com">Beamway Media</a>. All Right Reserved.
+                Copyright {new Date().getFullYear()} © <a href="https://beamwaymedia.vercel.com">Beamway Media</a>. All Right Reserved.
             </p>
         </footer>
     )
