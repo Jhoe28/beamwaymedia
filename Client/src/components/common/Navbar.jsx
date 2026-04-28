@@ -54,7 +54,7 @@ const Navbar = () => {
 
         <div className="flex items-center gap-4">
             <button type="button" className="bg-white text-gray-600 border border-gray-300 hidden text-sm hover:bg-gray-50 max-[920px]:hidden min-[921px]:inline active:scale-95 transition-all w-40 h-11 rounded-full">
-                +1234567889
+                +1234567800
             </button>
             <a href="mailto:Beamwaymedia@gmail.com" className="md:flex items-center gap-2 text-sm hover:text-blue-500 transition">
                 <img src={assets.EmailIcon} alt="Email" className="w-5 h-5" />
