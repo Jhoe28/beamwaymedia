@@ -9,7 +9,7 @@ const Footer = () => {
                 <div>
                     <h2 className="font-semibold text-gray-200 mb-5">Get in touch</h2>
                     <div className="min-[768px]:text-4xl text-2xl space-y-2">
-                        <p>+1-234-567-890</p>
+                        <p>+1-234-567-800</p>
                         <p>Beamwaymedia@gmail.com</p>
                     </div>
                 </div>
