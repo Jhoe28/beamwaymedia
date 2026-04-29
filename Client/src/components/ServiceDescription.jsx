@@ -5,10 +5,10 @@ const ServiceDescription = ({ icon, title, description, accentImg, isActive, onH
     <>
         <div className={`grid grid-cols-1 md:grid-cols-3 border-b-2 border-b-gray-300 last:border-none gap-8 py-6 px-4 md:px-12 lg:px-16 xl:px-24 hover:bg-gray-200 rounded-lg transition-colors ${isActive ? 'bg-gray-200' : ''}`} onMouseEnter={onHover}>
             <div className='flex items-center gap-4'>
-                <img src={icon} alt={title} className='w-12 h-12' />
+                <span className="material-symbols-outlined p-2 rounded-md bg-blue-200">{icon}</span>
                 <h2 className='text-2xl font-medium'>{title}</h2>
             </div>
-            <div>
+            <div className='flex items-center'>
                 <p>{description}</p>
             </div>
             <div className='hidden lg:flex items-center justify-end'>

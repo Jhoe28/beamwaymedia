@@ -41,7 +41,7 @@ const Navbar = () => {
                                 to={`/services/${service.slug}`}
                                 className="flex items-center gap-3 px-5 py-3 hover:bg-gray-50 transition-colors text-sm font-medium text-gray-700 hover:text-accent"
                             >
-                                <img src={service.img} alt={service.title} className="w-6 h-6 mix-blend-multiply" />
+                                <span className="material-symbols-outlined p-1 rounded-md bg-blue-200">{service.icon}</span>
                                 {service.title}
                             </Link>
                         ))}

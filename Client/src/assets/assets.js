@@ -49,7 +49,7 @@ import trello from './trello.png'
 import vscode from './vscode.png'
 import workspace from './workspace.png'
 import zapier from './zapier.png'
-import zoho from './zoho.jpg'
+import zoho from './zoho.png'
 
 const assets = {
     Logo: logo,
@@ -72,66 +72,47 @@ const serviceData = [
     {
         id: 1,
         slug: "social-media-marketing",
-        title: "Social Media Marketing",
-        img: socialMediaIcon,
-        description: "We manage and structure your brand presence across social platforms through intentional content planning, consistent publishing, and engagement strategies that build visibility, strengthen recognition, and keep your brand active in front of the right audience.",
+        title: "Social Media & Content",
+        description: "We make content that is planned with strategy and built with creativity, so your brand gets noticed and keeps growing.",
         accentImg: accentImg_1,
+        icon: "diversity_2",
+        littleDescription: "We create high-impact content and videos that turn followers into fans and spark meaningful digital conversations."
     },
     {
         id: 2,
         slug: "brand-storytelling",
-        title: "Brand Storytelling",
-        img: brandStoryTellingIcon,
-        description: "We shape how your brand is understood by building clear, strategic narratives that communicate your identity, values, and purpose in a way that connects with your audience and strengthens perception.",
+        title: "Brand Identity & Storytelling",
+        description: "We help you figure out who your brand is and how it shows up. From message and story to visuals, we shape what makes your brand yours.",
         accentImg: accentImg_2,
+        icon: "mic",
+        littleDescription: "We craft cohesive logos, voices, and visual styles that capture your essence and make your brand unforgettable."
     },
     {
         id: 3,
-        slug: "lead-generation",
-        title: "Lead Generation",
-        img: leadGenerationIcon,
-        description: "We build systems that attract and filter the right audience for your brand, creating structured pathways that turn attention into qualified interest and potential customers.",
-        accentImg: accentImg_3,
+        slug: "digital-marketing-services",
+        title: "Digital Marketing & Advertising",
+        description: "We run campaigns where the strategy and the creative pull in the same direction, so your spend reaches the right people and actually pays back.",
+        accentImg: accentImg_5,
+        icon: "campaign",
+        littleDescription: "Targeted ads and SEO strategies designed to boost visibility, drive traffic, and maximize your return on investment."
     },
     {
         id: 4,
-        slug: "marketing-consultancy",
-        title: "Marketing Consultancy",
-        img: marketingConsultancyIcon,
-        description: "We provide clear strategic direction to help brands make better marketing decisions, offering insight, structure, and guidance that improves clarity and long-term growth",
-        accentImg: accentImg_4,
+        slug: "website-design-and-development",
+        title: "Website & Digital Presence",
+        description: "We build websites that say what they need to say. Clear structure, sharp copy, and design that moves visitors to act.",
+        accentImg: accentImg_7,
+        icon: "captive_portal",
+        littleDescription: "Fast, responsive, and beautiful websites built to provide a seamless user experience and drive measurable results."
     },
     {
         id: 5,
-        slug: "digital-marketing-services",
-        title: "Digital Marketing Services",
-        img: digitalMarketingIcon,
-        description: "We develop structured marketing systems that improve how your brand reaches, targets, and engages its audience, focusing on visibility, positioning, and sustainable growth through intentional digital strategies.",
-        accentImg: accentImg_5,
-    },
-    {
-        id: 6,
-        slug: "advertising-campaigns",
-        title: "Advertising Campaigns",
-        img: advertisingIcon,
-        description: "We design and manage advertising campaigns that are built to drive visibility and reach the right audience through clear strategy, strong creative direction, and continuous performance tracking for better results.",
-        accentImg: accentImg_6,
-    },
-    {
-        id: 7,
-        slug: "website-design-and-development",
-        title: "Website Design and Development",
-        img: websiteDesignIcon,
-        description: "We design structured and purposeful websites that communicate your brand clearly, improve user experience, and guide visitors towards understanding your offer and taking meaningful action.",
-        accentImg: accentImg_7,
-    },
-    {
-        id: 8,
         slug: "pr-and-communication",
-        title: "PR & Communication",
-        img: consultancyIcon,
-        description: "We manage and shape how your brand is perceived publicly through consistent messaging, strategic communication, and positioning that builds trust and strengthens reputation.",
-        accentImg: accentImg_8
+        title: "PR & Strategic Communication",
+        description: "We help you and your brand show up the right way in public, so the right people start to know you and trust you.",
+        accentImg: accentImg_8,
+        icon: "communication",
+        littleDescription: "Strategic media outreach and reputation management to ensure your brand stays trusted, credible, and top-of-mind."
     }
 ]
 const aboutData = [
@@ -182,7 +163,6 @@ const aboutData = [
 const marqueeData = [
   {
     id: 1,
-    image: 'https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=200',
     name: 'Briar Martin',
     handle: '@neilstellar',
     date: 'April 20, 2025',

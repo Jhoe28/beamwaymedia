@@ -25,10 +25,16 @@ const Home = () => {
 
       {/* Second Section */}
       <div className='w-full bg-gray-200 mt-0 px-4 md:px-16 lg:px-24 xl:px-32 py-4 sm:py-6 md:py-12 lg:py-16 xl:py-24'>
-        <h1 className='text-4xl'>How We Can Help You</h1>
-        <div className='grid max-[870px]:grid-cols-1 max-[920px]:grid-cols-2 min-[921px]:grid-cols-3 my-2 sm:my-4 md:my-6 lg:my-12'>
+        <h1 className='text-4xl font-bold'>How We Can Help You</h1>
+        <div className='grid max-[870px]:grid-cols-1 max-[920px]:grid-cols-2 min-[921px]:grid-cols-3 my-2 sm:my-4 md:my-6 lg:my-12 gap-6'>
           {serviceData.map((service, index) => (
-            <ServiceTitle key={service.id} img={service.img} title={service.title} slug={service.slug} />
+            <ServiceTitle 
+              key={service.id} 
+              icon={service.icon} 
+              title={service.title} 
+              littleDescription={service.littleDescription}
+              slug={service.slug} 
+            />
           ))}
         </div>
       </div>
@@ -105,7 +111,7 @@ const Home = () => {
         {serviceData.map((service) => (
           <ServiceDescription
             key={service.id}
-            icon={service.img}
+            icon={service.icon}
             title={service.title}
             description={service.description}
             accentImg={service.accentImg}
@@ -114,10 +120,36 @@ const Home = () => {
           />
         ))}
       </div>
-
+      {/* Sixth Section */}
       <CreativeStack />
+      {/*  Seventh Section */}
+      <div class="py-16 px-4">
+        <h1 class='font-semibold text-gray-900 text-3xl sm:text-4xl text-center mx-auto'>Don't just take our words</h1>
+        <p class='text-sm/relaxed text-gray-600 text-center mt-2 max-w-xl mx-auto'>Hear what our users say about us. We're always looking for ways to improve. If you have a positive experience with us, leave a review.</p>
+        <div class="relative max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 md:px-0 pt-16">
+            <div class='bg-gray-800 rounded-lg p-6 transform transition hover:-translate-y-1'>
+                {/* <p class='font-medium text-sm text-white mb-6'>Product Designer</p> */}
+                <p class='text-sm text-gray-200 mb-4.5'>"Beamway helped us refine our brand positioning. We finally understood how to communicate what we do in a clear and simple way."</p>
+                <p class='text-xs text-gray-300'>- Client Feedback</p>
+            </div>
+            <div class='bg-gray-800 rounded-lg p-6 transform transition hover:-translate-y-1'>
+                {/* <p class='font-medium text-sm text-white mb-6'>Software Engineer</p> */}
+                <p class='text-sm text-gray-200 mb-4.5'>"The structure they brought to our content completely changed our consistency. Our social media now feels planned and intentional, not random."</p>
+                <p class='text-xs text-gray-300'>- Client Feedback</p>
+            </div>
+            <div class='bg-gray-800 rounded-lg p-6 transform transition hover:-translate-y-1'>
+                {/* <p class='font-medium text-sm text-white mb-6'>Marketing Manager</p> */}
+                <p class='text-sm text-gray-200 mb-4.5'>"The biggest shift was visibility. Our brand started reaching the right audience and getting more meaningful engagement."</p>
+                <p class='text-xs text-gray-300'>- Client Feedback</p>
+            </div>
+        </div>
+      </div>
+
+      {/* Eight Section */}
       <CallToAction />
+      {/* Ninth Section */}
       <ContactForm />
+      {/* Tenth Section */}
       <TrustedBy />
     </>
   )
