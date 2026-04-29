@@ -76,7 +76,17 @@ const serviceData = [
         description: "We make content that is planned with strategy and built with creativity, so your brand gets noticed and keeps growing.",
         accentImg: accentImg_1,
         icon: "diversity_2",
-        littleDescription: "We create high-impact content and videos that turn followers into fans and spark meaningful digital conversations."
+        littleDescription: "We create high-impact content and videos that turn followers into fans and spark meaningful digital conversations.",
+        
+        about: "We help you show up across all platforms with content that is clear, consistent, and shaped by strategy. This is ongoing work, not one-off posts. We build the systems that give your brand a steady presence on the platforms that matter, with content that connects to your audience and keeps your visibility growing month after month.",
+        listItem1: "Content strategy",
+        listItem2: "Content calendars and editorial planning",
+        listItem3: "Copywriting for posts and captions",
+        listItem4: "Creative direction for visuals",
+        listItem5: "Community management",
+        listItem6: "Performance reviews",
+
+        ourApproach: "Every piece of content connects back to your brand’s position and audience. We plan ahead so the work feels intentional, and we pay close attention to what is actually working. The plan adjusts as we go, so the content keeps getting sharper."
     },
     {
         id: 2,
@@ -85,7 +95,17 @@ const serviceData = [
         description: "We help you figure out who your brand is and how it shows up. From message and story to visuals, we shape what makes your brand yours.",
         accentImg: accentImg_2,
         icon: "mic",
-        littleDescription: "We craft cohesive logos, voices, and visual styles that capture your essence and make your brand unforgettable."
+        littleDescription: "We craft cohesive logos, voices, and visual styles that capture your essence and make your brand unforgettable.",
+
+        about: "This is the foundation. Before any content goes out or any campaign runs, we help you define what your brand stands for, who it is speaking to, and how it should sound and look. The work here gives every other part of your marketing something solid to build on, and makes your brand easier to recognise wherever it shows up.",
+        listItem1: "Brand positioning",
+        listItem2: "Messaging and clarity",
+        listItem3: "Brand voice and tone",
+        listItem4: "Story development",
+        listItem5: "Visual identity direction",
+        listItem6: "Brand guidelines",
+
+        ourApproach: "We start with conversations, not creative briefs. We learn your brand from the inside, the people behind it and the audience in front of it, then build the positioning, story, and visual identity that make it feel like itself."
     },
     {
         id: 3,
@@ -94,7 +114,17 @@ const serviceData = [
         description: "We run campaigns where the strategy and the creative pull in the same direction, so your spend reaches the right people and actually pays back.",
         accentImg: accentImg_5,
         icon: "campaign",
-        littleDescription: "Targeted ads and SEO strategies designed to boost visibility, drive traffic, and maximize your return on investment."
+        littleDescription: "Targeted ads and SEO strategies designed to boost visibility, drive traffic, and maximize your return on investment.",
+        
+        about: "This is where we help you reach further and grow faster. We build marketing systems that put your brand in front of the right people, with clear messages and creative that earns attention. The goal is never reach for its own sake. It is reach that turns into real outcomes, whether that is leads, sales, or stronger awareness in the markets that matter to you.",
+        listItem1: "Digital marketing strategy",
+        listItem2: "Paid social and search campaigns",
+        listItem3: "Ad creative and copy",
+        listItem4: "Email marketing",
+        listItem5: "Lead generation",
+        listItem6: "Campaign performance tracking",
+
+        ourApproach: "We treat marketing as a creative discipline, not a numbers game. Strategy, message, and creative all pull in the same direction, otherwise the spend gets wasted on campaigns that look fine and convert poorly. We track performance closely and adjust before things drift, so the spend earns its way back."
     },
     {
         id: 4,
@@ -103,7 +133,16 @@ const serviceData = [
         description: "We build websites that say what they need to say. Clear structure, sharp copy, and design that moves visitors to act.",
         accentImg: accentImg_7,
         icon: "captive_portal",
-        littleDescription: "Fast, responsive, and beautiful websites built to provide a seamless user experience and drive measurable results."
+        littleDescription: "Fast, responsive, and beautiful websites built to provide a seamless user experience and drive measurable results.",
+        
+        about: "Your website is often the first real conversation your brand has with someone new. It is where people decide whether to trust you and figure out their next step. We build sites that say what they need to say in the right order, look the way your brand should look, and guide visitors towards taking meaningful action, whether that is booking a call, making a purchase, or signing up to hear more.",
+        listItem1: "Website strategy and structure",
+        listItem2: "Website design and user experience",
+        listItem3: "Website copy",
+        listItem4: "Landing pages for campaigns",
+        listItem5: "Ongoing site improvements",
+
+        ourApproach: "Every site starts with one question. What does the visitor need to understand, feel, and do here? Once that is clear, the structure, the copy, and the design all follow naturally, and the result is a site that actually works, not just one that looks nice."
     },
     {
         id: 5,
@@ -112,7 +151,17 @@ const serviceData = [
         description: "We help you and your brand show up the right way in public, so the right people start to know you and trust you.",
         accentImg: accentImg_8,
         icon: "communication",
-        littleDescription: "Strategic media outreach and reputation management to ensure your brand stays trusted, credible, and top-of-mind."
+        littleDescription: "Strategic media outreach and reputation management to ensure your brand stays trusted, credible, and top-of-mind.",
+    
+        about: "How your brand speaks publicly shapes how it is remembered. The press feature, the launch announcement, the founder interview, these are the moments that quietly build or damage a reputation, and most of them happen without enough thought. We help you and your team show up with intention in those moments, building the kind of presence and trust that goes beyond your own channels.",
+        listItem1: "PR strategy",
+        listItem2: "Press releases and media outreach",
+        listItem3: "Founder and leadership visibility",
+        listItem4: "Messaging for launches and announcements",
+        listItem5: "Crisis communication",
+        listItem6: "Reputation management",
+
+        ourApproach: "We treat communication as part of brand-building, not a separate exercise. The way you sound to a journalist should match the way you sound on Instagram and on your website. We build the messaging frameworks that make that easy to maintain across every public moment."
     }
 ]
 const aboutData = [
