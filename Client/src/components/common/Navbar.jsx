@@ -54,7 +54,7 @@ const Navbar = () => {
 
         <div className="flex items-center gap-4">
             <button type="button" className="bg-white text-gray-600 border border-gray-300 hidden text-sm hover:bg-gray-50 max-[920px]:hidden min-[921px]:inline active:scale-95 transition-all w-40 h-11 rounded-full">
-                +1234567800
+                +1234565800
             </button>
             <a href="mailto:Beamwaymedia@gmail.com" className="md:flex items-center gap-2 text-sm hover:text-blue-500 transition">
                 <i className="fa-regular fa-envelope text-xl bg-accent text-white hover:bg-black hover:text-white p-3 rounded-md"></i>
