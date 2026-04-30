@@ -9,7 +9,7 @@ const Navbar = () => {
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false)
 
   return (
-    <nav className="h-[70px] relative w-full px-6 md:px-12 lg:px-16 xl:px-24 flex items-center justify-between z-20 bg-white text-gray-700 shadow-[0px_4px_25px_0px_#0000000D] transition-all">
+    <nav className="animate-slideDown h-[70px] relative w-full px-6 md:px-12 lg:px-16 xl:px-24 flex items-center justify-between z-20 bg-white text-gray-700 shadow-[0px_4px_25px_0px_#0000000D] transition-all">
             
         <a href="/">
             <img src={assets.Logo} alt="logo" className="w-40 h-auto" />
@@ -57,7 +57,7 @@ const Navbar = () => {
                 +1234567800
             </button>
             <a href="mailto:Beamwaymedia@gmail.com" className="md:flex items-center gap-2 text-sm hover:text-blue-500 transition">
-                <img src={assets.EmailIcon} alt="Email" className="w-5 h-5" />
+                <i className="fa-regular fa-envelope text-xl bg-accent text-white hover:bg-black hover:text-white p-3 rounded-md"></i>
             </a>
             <button aria-label="menu-btn" type="button" className="menu-btn inline-block md:hidden active:scale-90 transition" onClick={() => setMenuOpen(!menuOpen)}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="#000">

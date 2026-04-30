@@ -28,6 +28,7 @@ const ServiceDetail = () => {
       
       {/* Second Section */}
       <ServiceAbout
+        headline={service.headline}
         title={service.title}
         about={service.about}
         listItem1={service.listItem1}
@@ -36,6 +37,7 @@ const ServiceDetail = () => {
         listItem4={service.listItem4}
         listItem5={service.listItem5}
         listItem6={service.listItem6}
+        className={service.id % 2 === 0 ? 'md:!flex-row-reverse gap-30' : 'md:!flex-row'}
       />
 
       <ContactForm />

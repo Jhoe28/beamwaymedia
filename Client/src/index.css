@@ -14,6 +14,9 @@
   --animate-jump: jump 1s ease-in-out infinite;
   --animate-marquee: marqueeScroll 25s linear infinite;
   --animate-marquee-reverse: marqueeScroll 25s linear infinite reverse;
+  --animate-heroAnimation: heroAnimation 2s ease;
+  --animate-appear: appear 2s ease;
+  --animate-slideDown: slideDown 2s ease;
 }
 
 /* Apply Inter to everything */
@@ -22,34 +25,24 @@
     font-family: "Inter", system-ui, sans-serif;
   }
 }
-.material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;  /* Preferred icon size */
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
 
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
-
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
-
-  /* Support for IE. */
-  font-feature-settings: 'liga';
-}
 
 @layer components {
   .nav-link {
     @apply relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-accent after:transition-all after:duration-300 hover:after:w-full;
+  }
+  .animate-appear-breathe {
+    animation: appear 2s ease forwards, breathe 3s ease-in-out 3s infinite;
+  }
+  .reveal {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.7s ease, transform 0.7s ease !important;
+  }
+
+  .reveal.visible {
+    opacity: 1;
+    transform: scale(1);
   }
 }
 
@@ -67,4 +60,46 @@
 @keyframes marqueeScroll {
   0% { transform: translateX(0%); }
   100% { transform: translateX(-50%); }
+}
+
+@keyframes heroAnimation {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes view {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 }

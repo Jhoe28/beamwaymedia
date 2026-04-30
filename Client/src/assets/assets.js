@@ -1,13 +1,5 @@
 import logo from './logo.png'
 import heroBg from './heroBg.png'
-import brandStoryTellingIcon from './brandStoryTellingIcon.png'
-import consultancyIcon from './consultancyIcon.png'
-import digitalMarketingIcon from './digitalMarketingIcon.png'
-import leadGenerationIcon from './leadGenerationIcon.png'
-import marketingConsultancyIcon from './marketingConsultancyIcon.png'
-import socialMediaIcon from './socialMediaIcon.jpg'
-import websiteDesignIcon from './websiteDesignIcon.png'
-import advertisingIcon from './advertisingIcon.png'
 import about_1 from './about_1.png'
 import projects from './projects.jpg'
 import accentImg_1 from './accentImg_1.png'
@@ -18,12 +10,7 @@ import accentImg_5 from './accentImg_5.png'
 import accentImg_6 from './accentImg_6.png'
 import accentImg_7 from './accentImg_7.png'
 import accentImg_8 from './accentImg_8.png'
-import emailIcon from './emailIcon.png'
 import arrowDown from './arrowDown.png'
-import instagram from './instagram.png'
-import x from './x.png'
-import linkedin from './linkedin.png'
-import tiktok from './tiktok.png'
 import canva from './canva.png'
 import cta from './cta.jpg'
 import adobeCloud from './adobeCloud.png'
@@ -42,7 +29,7 @@ import mailchimp from './mailchimp.png'
 import meta from './meta.png'
 import notion from './notion.png'
 import photoshop from './photoshop.png'
-import powerpoint from './powerpoint.jpg'
+import powerpoint from './powerpoint.png'
 import sheets from './sheets.png'
 import slack from './slack.png'
 import trello from './trello.png'
@@ -53,14 +40,9 @@ import zoho from './zoho.png'
 
 const assets = {
     Logo: logo,
-    X: x,
-    Instagram: instagram,
-    Linkedin: linkedin,
-    Tiktok: tiktok,
     HeroBg: heroBg,
     About_1: about_1,
     Projects: projects,
-    EmailIcon: emailIcon,
     ArrowDown: arrowDown,
     AccentImg_1: accentImg_1,
     Cta: cta
@@ -78,6 +60,7 @@ const serviceData = [
         icon: "diversity_2",
         littleDescription: "We create high-impact content and videos that turn followers into fans and spark meaningful digital conversations.",
         
+        headline: "From Random Posts to Strategic Presence.",
         about: "We help you show up across all platforms with content that is clear, consistent, and shaped by strategy. This is ongoing work, not one-off posts. We build the systems that give your brand a steady presence on the platforms that matter, with content that connects to your audience and keeps your visibility growing month after month.",
         listItem1: "Content strategy",
         listItem2: "Content calendars and editorial planning",
@@ -97,6 +80,7 @@ const serviceData = [
         icon: "mic",
         littleDescription: "We craft cohesive logos, voices, and visual styles that capture your essence and make your brand unforgettable.",
 
+        headline: "Build a Brand People Instantly Understand and Remember.",
         about: "This is the foundation. Before any content goes out or any campaign runs, we help you define what your brand stands for, who it is speaking to, and how it should sound and look. The work here gives every other part of your marketing something solid to build on, and makes your brand easier to recognise wherever it shows up.",
         listItem1: "Brand positioning",
         listItem2: "Messaging and clarity",
@@ -116,6 +100,7 @@ const serviceData = [
         icon: "campaign",
         littleDescription: "Targeted ads and SEO strategies designed to boost visibility, drive traffic, and maximize your return on investment.",
         
+        headline: "Turn Attention Into Real Growth, Not Just Clicks.",
         about: "This is where we help you reach further and grow faster. We build marketing systems that put your brand in front of the right people, with clear messages and creative that earns attention. The goal is never reach for its own sake. It is reach that turns into real outcomes, whether that is leads, sales, or stronger awareness in the markets that matter to you.",
         listItem1: "Digital marketing strategy",
         listItem2: "Paid social and search campaigns",
@@ -135,6 +120,7 @@ const serviceData = [
         icon: "captive_portal",
         littleDescription: "Fast, responsive, and beautiful websites built to provide a seamless user experience and drive measurable results.",
         
+        headline: "A Website That Doesn’t Just Look Good, It Moves People to Act.",
         about: "Your website is often the first real conversation your brand has with someone new. It is where people decide whether to trust you and figure out their next step. We build sites that say what they need to say in the right order, look the way your brand should look, and guide visitors towards taking meaningful action, whether that is booking a call, making a purchase, or signing up to hear more.",
         listItem1: "Website strategy and structure",
         listItem2: "Website design and user experience",
@@ -153,6 +139,7 @@ const serviceData = [
         icon: "communication",
         littleDescription: "Strategic media outreach and reputation management to ensure your brand stays trusted, credible, and top-of-mind.",
     
+        headline: "Control the Narrative Before It Controls Your Brand.",
         about: "How your brand speaks publicly shapes how it is remembered. The press feature, the launch announcement, the founder interview, these are the moments that quietly build or damage a reputation, and most of them happen without enough thought. We help you and your team show up with intention in those moments, building the kind of presence and trust that goes beyond your own channels.",
         listItem1: "PR strategy",
         listItem2: "Press releases and media outreach",

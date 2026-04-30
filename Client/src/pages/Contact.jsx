@@ -3,8 +3,10 @@ import ContactForm from '../components/ContactForm'
 import TrustedBy from '../components/TrustedBy'
 import Hero from '../components/Hero'
 import assets from '../assets/assets'
+import useReveal from '../useReaveal'
 
 const Contact = () => {
+  useReveal()
   return (
     <div>
       <Hero 

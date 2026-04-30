@@ -5,15 +5,17 @@ import ContactForm from '../components/ContactForm'
 import TrustedBy from '../components/TrustedBy'
 import AboutDescription from '../components/AboutDescription'
 import { aboutData } from '../assets/assets'
+import useReveal from '../useReaveal'
 
 const About = () => {
+  useReveal()
   return (
     <div>
       <Hero 
           heading="Who We Are"
           subheading="At Beamway we do not manage platforms, we manage perception. And we do it with the clarity, creativity, and intention that every serious bramds deserve"
           heroImage={assets.AccentImg_1}
-          className="min-[767px]:items-end max-[767px]:justify-end min-h-[30vh]"
+          className="min-[767px]:items-end max-[767px]:justify-center min-h-[30vh]"
       />
       <Hero 
         heading="Who We Are" 
@@ -27,48 +29,40 @@ const About = () => {
         className="bg-gray-100"
       />
 
-      <div className='flex flex-col justify-around gap-20 bg-gray-200 relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-gray-600 px-4 md:px-16 lg:px-24 xl:px-32 py-6 md:py-12 lg:py-16'>
-        <h1 className='text-6xl'>Our Impact</h1>
+      <div className='flex flex-col justify-around font-bold gap-20 bg-gray-200 relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-gray-600 px-4 md:px-16 lg:px-24 xl:px-32 py-6 md:py-12 lg:py-16'>
+        <h1 className='text-6xl reveal'>Our Impact</h1>
 
-        <div className="grid max-[832px]:grid-cols-1 max-[1023px]:grid-cols-2 min-[1024px]:grid-cols-4 gap-8">
-          <div style={{backgroundImage: `url(${assets.Projects})`}} className="relative border bg-center bg-cover bg-no-repeat border-zinc-200 hover:border-zinc-300 transition-colors rounded-xl p-6 flex flex-col justify-between h-[350px] group">
+        <div className="grid max-[832px]:grid-cols-1 max-[1023px]:grid-cols-2 min-[1024px]:grid-cols-3 gap-8">
+          <div style={{backgroundImage: `url(${assets.Projects})`}} data-delay="0" className="reveal relative border bg-center bg-cover bg-no-repeat border-zinc-200 hover:border-zinc-300 transition-colors rounded-xl p-6 flex flex-col justify-between h-[350px] group">
             {/* Dark gradient overlay */}
-            <div className="absolute inset-0 rounded-xl bg-linear-to-t from-black/95 via-black/80 to-black/50 group-hover:from-black/80 group-hover:via-black/60 group-hover:to-black/40 transition-all duration-400" />
+            <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-black/90 via-black/70 to-black/30 group-hover:from-black/70 group-hover:via-black/50 group-hover:to-black/20 transition-all duration-300" />
             
             {/* Content stays on top */}
             <p className="text-xl text-right text-white relative z-10">Projects <br/>In Progress</p>
             <p className="text-2xl text-neutral-200 mb-2 px-2 relative z-10"><span className="font-medium text-7xl">12+</span></p>
           </div>
-          <div style={{backgroundImage: `url(${assets.Projects})`}} className="relative border bg-center bg-cover bg-no-repeat border-zinc-200 hover:border-zinc-300 transition-colors rounded-xl p-6 flex flex-col justify-between h-[350px] group">
+          <div style={{backgroundImage: `url(${assets.Projects})`}} data-delay="200" className="reveal relative border bg-center bg-cover bg-no-repeat border-zinc-200 hover:border-zinc-300 transition-colors rounded-xl p-6 flex flex-col justify-between h-[350px] group">
             {/* Dark gradient overlay */}
-            <div className="absolute inset-0 rounded-xl bg-linear-to-t from-black/95 via-black/80 to-black/50 group-hover:from-black/80 group-hover:via-black/60 group-hover:to-black/40 transition-all duration-400" />
+            <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-black/90 via-black/70 to-black/30 group-hover:from-black/70 group-hover:via-black/50 group-hover:to-black/20 transition-all duration-300" />
             
             {/* Content stays on top */}
             <p className="text-xl text-right text-white relative z-10">Brands <br/>Supported</p>
             <p className="text-2xl text-neutral-200 mb-2 px-2 relative z-10"><span className="font-medium text-7xl">8+</span></p>
           </div>
-          <div style={{backgroundImage: `url(${assets.Projects})`}} className="relative border bg-center bg-cover bg-no-repeat border-zinc-200 hover:border-zinc-300 transition-colors rounded-xl p-6 flex flex-col justify-between h-[350px] group">
+          <div style={{backgroundImage: `url(${assets.Projects})`}} data-delay="400" className="reveal relative border bg-center bg-cover bg-no-repeat border-zinc-200 hover:border-zinc-300 transition-colors rounded-xl p-6 flex flex-col justify-between h-[350px] group">
             {/* Dark gradient overlay */}
-            <div className="absolute inset-0 rounded-xl bg-linear-to-t from-black/95 via-black/80 to-black/50 group-hover:from-black/80 group-hover:via-black/60 group-hover:to-black/40 transition-all duration-400" />
+            <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-black/90 via-black/70 to-black/30 group-hover:from-black/70 group-hover:via-black/50 group-hover:to-black/20 transition-all duration-300" />
             
             {/* Content stays on top */}
             <p className="text-xl text-right text-white relative z-10">Content <br/>Pieces Created</p>
             <p className="text-2xl text-neutral-200 mb-2 px-2 relative z-10"><span className="font-medium text-7xl">100+</span></p>
-          </div>
-          <div style={{backgroundImage: `url(${assets.Projects})`}} className="relative border bg-center bg-cover bg-no-repeat border-zinc-200 hover:border-zinc-300 transition-colors rounded-xl p-6 flex flex-col justify-between h-[350px] group">
-            {/* Dark gradient overlay */}
-            <div className="absolute inset-0 rounded-xl bg-linear-to-t from-black/95 via-black/80 to-black/50 group-hover:from-black/80 group-hover:via-black/60 group-hover:to-black/40 transition-all duration-400" />
-            
-            {/* Content stays on top */}
-            <p className="text-xl text-right text-white relative z-10">Strategy Sessions <br/>Delivered</p>
-            <p className="text-2xl text-neutral-200 mb-2 px-2 relative z-10"><span className="font-medium text-7xl">15+</span></p>
           </div>
           
         </div>
       </div>
 
       <div className='bg-gray-200 border-b-2 border-b-gray-300 pt-6 max-[826px]:py-16 lg:py-12'>
-        <div className='grid grid-cols-1 md:grid-cols-3 gap-8 pb-6 px-2 md:px-12 lg:px-16 xl:px-24 max-[826px]:hidden border-b border-gray-300'>
+        <div className='reveal grid grid-cols-1 md:grid-cols-3 gap-8 pb-6 px-2 md:px-12 lg:px-16 xl:px-24 max-[826px]:hidden border-b border-gray-300'>
           <div className='flex items-center gap-4'>
             <img src={assets.ArrowDown} alt="Arrow Down" className="max-w-5" />
             <p>BeamWay</p>
@@ -79,19 +73,20 @@ const About = () => {
           </div>
         </div>
 
-        {aboutData.map((service) => (
-          <AboutDescription 
-            key={service.id}
-            p={service.p}
-            title2={service.title2}
-            description={service.description2}
-          />
+        {aboutData.map((service, index) => (
+          <div key={service.id} className='reveal' style={{ transitionDelay: `${index * 0.1}s`}}>
+            <AboutDescription 
+              p={service.p}
+              title2={service.title2}
+              description={service.description2}
+            />
+          </div>
         ))}
 
       </div>
 
       <div className='px-4 md:px-12 lg:px-16 xl:px-24 py-6 md:py-12 lg:py-16 xl:py-24'>
-        <p className='font-medium text-center'>
+        <p className='reveal font-bold md:font-2xl text-center'>
             In a world saturated with content, the problem is not that brands are invisible it is that they have not been made clear. Most organisations communicate loudly without saying anything that sticks. They produce content without direction, campaigns without context, and visibility without meaning.
             Beamway Media was built on a different conviction: that deep strategic thinking, when combined with genuine creative craft, produces communication that does not just reach people it moves them.<br/><br/> We believe in work that carries weight, earns trust, and builds something worth being seen for.
             Storytelling is not a department or a format for us. It is the lens through which every brand decision should be made. A well-told story changes how audiences feel, how they remember, and ultimately how they act.
