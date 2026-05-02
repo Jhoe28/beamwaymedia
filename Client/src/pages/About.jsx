@@ -29,11 +29,11 @@ const About = () => {
         className="bg-gray-100"
       />
 
-      <div className='flex flex-col justify-around font-bold gap-20 bg-gray-200 relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-gray-600 px-4 md:px-16 lg:px-24 xl:px-32 py-6 md:py-12 lg:py-16'>
-        <h1 className='text-6xl reveal'>Our Impact</h1>
+      <div className='flex flex-col justify-around font-bold gap-10 bg-gray-200 relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-gray-600 px-4 md:px-16 lg:px-24 xl:px-32 py-6 md:py-12'>
+        <h1 className='text-5xl reveal'>Our Impact</h1>
 
         <div className="grid max-[832px]:grid-cols-1 max-[1023px]:grid-cols-2 min-[1024px]:grid-cols-3 gap-8">
-          <div style={{backgroundImage: `url(${assets.Projects})`}} data-delay="0" className="reveal relative border bg-center bg-cover bg-no-repeat border-zinc-200 hover:border-zinc-300 transition-colors rounded-xl p-6 flex flex-col justify-between h-[350px] group">
+          <div style={{backgroundImage: `url(${assets.Projects})`}} data-delay="0" className="reveal relative border bg-center bg-cover bg-no-repeat border-zinc-200 hover:border-zinc-300 transition-colors rounded-xl p-6 flex flex-col justify-between aspect-square group">
             {/* Dark gradient overlay */}
             <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-black/90 via-black/70 to-black/30 group-hover:from-black/70 group-hover:via-black/50 group-hover:to-black/20 transition-all duration-300" />
             
@@ -41,7 +41,7 @@ const About = () => {
             <p className="text-xl text-right text-white relative z-10">Projects <br/>In Progress</p>
             <p className="text-2xl text-neutral-200 mb-2 px-2 relative z-10"><span className="font-medium text-7xl">12+</span></p>
           </div>
-          <div style={{backgroundImage: `url(${assets.Projects})`}} data-delay="200" className="reveal relative border bg-center bg-cover bg-no-repeat border-zinc-200 hover:border-zinc-300 transition-colors rounded-xl p-6 flex flex-col justify-between h-[350px] group">
+          <div style={{backgroundImage: `url(${assets.Projects})`}} data-delay="200" className="reveal relative border bg-center bg-cover bg-no-repeat border-zinc-200 hover:border-zinc-300 transition-colors rounded-xl p-6 flex flex-col justify-between aspect-square group">
             {/* Dark gradient overlay */}
             <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-black/90 via-black/70 to-black/30 group-hover:from-black/70 group-hover:via-black/50 group-hover:to-black/20 transition-all duration-300" />
             
@@ -49,7 +49,7 @@ const About = () => {
             <p className="text-xl text-right text-white relative z-10">Brands <br/>Supported</p>
             <p className="text-2xl text-neutral-200 mb-2 px-2 relative z-10"><span className="font-medium text-7xl">8+</span></p>
           </div>
-          <div style={{backgroundImage: `url(${assets.Projects})`}} data-delay="400" className="reveal relative border bg-center bg-cover bg-no-repeat border-zinc-200 hover:border-zinc-300 transition-colors rounded-xl p-6 flex flex-col justify-between h-[350px] group">
+          <div style={{backgroundImage: `url(${assets.Projects})`}} data-delay="400" className="reveal relative border bg-center bg-cover bg-no-repeat border-zinc-200 hover:border-zinc-300 transition-colors rounded-xl p-6 flex flex-col justify-between aspect-square group">
             {/* Dark gradient overlay */}
             <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-black/90 via-black/70 to-black/30 group-hover:from-black/70 group-hover:via-black/50 group-hover:to-black/20 transition-all duration-300" />
             

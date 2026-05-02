@@ -4,6 +4,7 @@ import { serviceData } from '../assets/assets'
 import ContactForm from '../components/ContactForm'
 import Hero from '../components/Hero'
 import ServiceAbout from '../components/ServiceAbout'
+import OurApproach from '../components/OurApproach'
 
 const ServiceDetail = () => {
   const { slug } = useParams()
@@ -40,6 +41,10 @@ const ServiceDetail = () => {
         className={service.id % 2 === 0 ? 'md:!flex-row-reverse gap-30' : 'md:!flex-row'}
       />
 
+      <OurApproach
+        key={serviceData.id}
+        paragraph={serviceData.ourApproach}
+      />
       <ContactForm />
     </div>
   )

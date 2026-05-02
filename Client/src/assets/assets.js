@@ -2,6 +2,7 @@ import logo from './logo.png'
 import heroBg from './heroBg.png'
 import about_1 from './about_1.png'
 import projects from './projects.jpg'
+import Cosmos from './Cosmos.jpg'
 import accentImg_1 from './accentImg_1.png'
 import accentImg_2 from './accentImg_2.png'
 import accentImg_3 from './accentImg_3.png'
@@ -45,7 +46,8 @@ const assets = {
     Projects: projects,
     ArrowDown: arrowDown,
     AccentImg_1: accentImg_1,
-    Cta: cta
+    Cta: cta,
+    Cosmos: Cosmos
 }
 
 export default assets

@@ -3,17 +3,17 @@ import assets from '../assets/assets'
 
 const Hero = (props) => {
   return (
-    <div className={`flex flex-col max-md:gap-15 md:flex-row justify-between py-12 md:py-16 mt-0 px-4 md:px-16 lg:px-24 xl:px-32 ${props.className || ''}`}>
-        <div className={`flex flex-col gap-4 h-full my-4 md:gap-8 ${props.contentClassName || 'items-start'}`}>
-            <h1 className={`text-5xl leading-14 font-semibold max-w-xl animate-heroAnimation min-[950px]:max-w-xl max-[950px]:max-w-full text-slate-900 ${props.headingClassName || 'text-left'}`}>
+    <div className={`flex flex-col max-md:gap-6 md:flex-row items-center justify-between py-12 md:py-16 mt-0 px-4 md:px-16 lg:px-24 xl:px-32 ${props.className || ''}`}>
+        <div className={`flex flex-col gap-4 h-full my-4 md:gap-6 ${props.contentClassName || 'items-start'}`}>
+            <h1 className={`text-5xl leading-14 font-bold max-w-xl animate-heroAnimation min-[950px]:max-w-xl max-[950px]:max-w-full text-slate-900 ${props.headingClassName || 'text-left'}`}>
                 {props.heading}
                 {props.accentHeading && (
                     <span className="text-accent block">{props.accentHeading}</span>
                 )}
             </h1>
-            <p className={`max-[950px]:text-xl text-slate-700 animate-heroAnimation max-w-lg max-[950px]:max-w-full mt-0 md:mt-2 ${props.textClassName || 'text-left'}`}>
+            <p className={`max-[950px]:text-lg leading-6 text-slate-700 animate-heroAnimation max-w-lg max-[950px]:max-w-full mt-0 md:mt-2 ${props.textClassName || 'text-left'}`}>
                 {props.subheading}
-                <br/><br/>
+                <br/>
                 {props.positioning}
             </p>
             {props.ctaText && (
@@ -24,7 +24,11 @@ const Hero = (props) => {
                 </div>
             )}
         </div>
-        <img src={props.heroImage} alt="hero" className={`scroll-animate animate-appear-breathe hidden min-[950px]:block min-[950px]:w-[350px] lg:w-[450px] transition-all duration-300`}/>
+        <img 
+            src={props.heroImage} 
+            alt="hero" 
+            className={`animate-appear-breathe hidden min-[950px]:block rounded-md transition-all duration-300 ${props.aboutImage || 'min-[950px]:w-[350px] lg:w-[450px]'}`}
+        />
     </div>
   )
 }

@@ -22,8 +22,9 @@ const Home = () => {
           accentHeading="Scale Your Visibility"
           subheading="We build creative marketing systems using content, branding, and strategy that improve how your brand is seen, understood, and positioned for growth and sales." 
           positioning="A creative media agency focused on clarity, structure, and intentional storytelling." 
-          heroImage="https://images.unsplash.com/photo-1681949222860-9cb3b0329878?q=80&w=450&h=560&auto=format&fit=crop"
+          heroImage={assets.HeroBg}
           ctaText="Start Your Brand Journey here!"
+          aboutImage='max-h-[700px] h-full'
       />
 
       {/* Second Section */}
@@ -57,14 +58,15 @@ const Home = () => {
         contentClassName="reveal"
         image="reveal"
         className="reveal"
+        aboutImage="min-[950px]:w-[400px] lg:w-[500px] object-cover"
       />
 
       {/* Forth Section */}
-      <div className='flex flex-col justify-around font-bold gap-20 bg-gray-200 relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-gray-600 px-4 md:px-16 lg:px-24 xl:px-32 py-6 md:py-12 lg:py-16'>
-        <h1 className='text-6xl reveal'>Our Impact</h1>
+      <div className='flex flex-col justify-around font-bold gap-10 bg-gray-200 relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-gray-600 px-4 md:px-16 lg:px-24 xl:px-32 py-6 md:py-12'>
+        <h1 className='text-5xl reveal'>Our Impact</h1>
 
         <div className="grid max-[832px]:grid-cols-1 max-[1023px]:grid-cols-2 min-[1024px]:grid-cols-3 gap-8">
-          <div style={{backgroundImage: `url(${assets.Projects})`}} data-delay="0" className="reveal relative border bg-center bg-cover bg-no-repeat border-zinc-200 hover:border-zinc-300 transition-colors rounded-xl p-6 flex flex-col justify-between h-[350px] group">
+          <div style={{backgroundImage: `url(${assets.Projects})`}} data-delay="0" className="reveal relative border bg-center bg-cover bg-no-repeat border-zinc-200 hover:border-zinc-300 transition-colors rounded-xl p-6 flex flex-col justify-between aspect-square group">
             {/* Dark gradient overlay */}
             <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-black/90 via-black/70 to-black/30 group-hover:from-black/70 group-hover:via-black/50 group-hover:to-black/20 transition-all duration-300" />
             
@@ -72,7 +74,7 @@ const Home = () => {
             <p className="text-xl text-right text-white relative z-10">Projects <br/>In Progress</p>
             <p className="text-2xl text-neutral-200 mb-2 px-2 relative z-10"><span className="font-medium text-7xl">12+</span></p>
           </div>
-          <div style={{backgroundImage: `url(${assets.Projects})`}} data-delay="200" className="reveal relative border bg-center bg-cover bg-no-repeat border-zinc-200 hover:border-zinc-300 transition-colors rounded-xl p-6 flex flex-col justify-between h-[350px] group">
+          <div style={{backgroundImage: `url(${assets.Projects})`}} data-delay="200" className="reveal relative border bg-center bg-cover bg-no-repeat border-zinc-200 hover:border-zinc-300 transition-colors rounded-xl p-6 flex flex-col justify-between aspect-square group">
             {/* Dark gradient overlay */}
             <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-black/90 via-black/70 to-black/30 group-hover:from-black/70 group-hover:via-black/50 group-hover:to-black/20 transition-all duration-300" />
             
@@ -80,7 +82,7 @@ const Home = () => {
             <p className="text-xl text-right text-white relative z-10">Brands <br/>Supported</p>
             <p className="text-2xl text-neutral-200 mb-2 px-2 relative z-10"><span className="font-medium text-7xl">8+</span></p>
           </div>
-          <div style={{backgroundImage: `url(${assets.Projects})`}} data-delay="400" className="reveal relative border bg-center bg-cover bg-no-repeat border-zinc-200 hover:border-zinc-300 transition-colors rounded-xl p-6 flex flex-col justify-between h-[350px] group">
+          <div style={{backgroundImage: `url(${assets.Projects})`}} data-delay="400" className="reveal relative border bg-center bg-cover bg-no-repeat border-zinc-200 hover:border-zinc-300 transition-colors rounded-xl p-6 flex flex-col justify-between aspect-square group">
             {/* Dark gradient overlay */}
             <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-black/90 via-black/70 to-black/30 group-hover:from-black/70 group-hover:via-black/50 group-hover:to-black/20 transition-all duration-300" />
             
@@ -93,7 +95,7 @@ const Home = () => {
       </div>
 
       {/* Fifth Section */}
-      <div className='border-b-2 border-b-gray-300 pt-6 max-[826px]:py-16 lg:py-12'>
+      {/* <div className='border-b-2 border-b-gray-300 pt-6 max-[826px]:py-16 lg:py-12'>
         <div className='grid grid-cols-1 md:grid-cols-3 gap-8 pb-6 px-4 md:px-12 lg:px-16 xl:px-24 max-[826px]:hidden border-b border-gray-300'>
           <div data-delay="100" className='reveal flex items-center gap-4'>
             <img src={assets.ArrowDown} alt="Arrow Down" className="max-w-5" />
@@ -120,11 +122,11 @@ const Home = () => {
             />
           </div>
         ))}
-      </div>
+      </div> */}
       {/* Sixth Section */}
       <CreativeStack />
       {/*  Seventh Section */}
-      <div class="py-16 px-4">
+      <div class="py-16 px-4 bg-gray-200">
         <h1 className='reveal font-semibold text-gray-900 text-3xl sm:text-4xl text-center mx-auto'>Don't just take our words</h1>
         <p className=' reveal text-sm/relaxed text-gray-600 text-center mt-2 max-w-xl mx-auto'>Hear what our users say about us. We're always looking for ways to improve. If you have a positive experience with us, leave a review.</p>
         <div class="relative max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 md:px-0 pt-16">

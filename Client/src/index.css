@@ -1,15 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Gilroy';
+  font-weight: 400;
+  src: url('/fonts/Gilroy-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Gilroy';
+  font-weight: 500;
+  src: url('/fonts/Gilroy-Medium.woff') format('woff');
+}
+@font-face {
+  font-family: 'Gilroy';
+  font-weight: 700;
+  src: url('/fonts/Gilroy-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Gilroy';
+  font-weight: 800;
+  src: url('/fonts/Gilroy-Heavy.woff') format('woff');
+}
+
 @theme {
-  /* Custom Colors */
   --color-accent: #082e99;
-
-  /* Custom Fonts */
-  --font-sans: "Inter", system-ui, sans-serif;
-  --font-heading: "Inter", system-ui, sans-serif;
+  --font-sans: "Gilroy", system-ui, sans-serif;
   --font-mono: ui-monospace, Consolas, monospace;
-
   --animate-breathe: breathe 3s ease-in-out infinite;
   --animate-jump: jump 1s ease-in-out infinite;
   --animate-marquee: marqueeScroll 25s linear infinite;
@@ -19,13 +34,16 @@
   --animate-slideDown: slideDown 2s ease;
 }
 
-/* Apply Inter to everything */
 @layer base {
   body {
-    font-family: "Inter", system-ui, sans-serif;
+    font-family: "Gilroy", system-ui, sans-serif;
+    font-weight: 400;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Gilroy", system-ui, sans-serif;
+    font-weight: 700;
   }
 }
-
 
 @layer components {
   .nav-link {
@@ -39,7 +57,6 @@
     transform: scale(0.8);
     transition: opacity 0.7s ease, transform 0.7s ease !important;
   }
-
   .reveal.visible {
     opacity: 1;
     transform: scale(1);
@@ -47,59 +64,26 @@
 }
 
 @keyframes breathe {
-  0% { transform: scale(1); }
+  0%, 100% { transform: scale(1); }
   50% { transform: scale(1.1); }
-  100% { transform: scale(1); }
 }
-
 @keyframes jump {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(70px); }
 }
-
 @keyframes marqueeScroll {
   0% { transform: translateX(0%); }
   100% { transform: translateX(-50%); }
 }
-
 @keyframes heroAnimation {
-  from {
-    opacity: 0;
-    transform: translateX(-100%);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0%);
-  }
+  from { opacity: 0; transform: translateX(-100%); }
+  to { opacity: 1; transform: translateX(0%); }
 }
-
 @keyframes appear {
-  0% {
-    opacity: 0;
-    transform: scale(0);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-@keyframes view {
-  0% {
-    opacity: 0;
-    transform: scale(0);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
+  0% { opacity: 0; transform: scale(0); }
+  100% { opacity: 1; transform: scale(1); }
 }
 @keyframes slideDown {
-  0% {
-    opacity: 0;
-    transform: translateY(-100%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0%);
-  }
+  0% { opacity: 0; transform: translateY(-100%); }
+  100% { opacity: 1; transform: translateY(0%); }
 }
