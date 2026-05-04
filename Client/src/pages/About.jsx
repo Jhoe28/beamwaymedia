@@ -6,7 +6,7 @@ import TrustedBy from '../components/TrustedBy'
 import AboutDescription from '../components/AboutDescription'
 import { aboutData } from '../assets/assets'
 import useReveal from '../useReaveal'
-// import OurApproach from ../Component/
+import OurApproach from '../components/OurApproach'
 
 const About = () => {
   useReveal()
