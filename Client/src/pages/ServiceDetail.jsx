@@ -42,8 +42,7 @@ const ServiceDetail = () => {
       />
 
       <OurApproach
-        key={serviceData.id}
-        paragraph={serviceData.ourApproach}
+        ourApproach={service.ourApproach}
       />
       <ContactForm />
     </div>

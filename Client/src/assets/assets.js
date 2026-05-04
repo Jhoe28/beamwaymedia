@@ -1,7 +1,9 @@
 import logo from './logo.png'
 import heroBg from './heroBg.png'
 import about_1 from './about_1.png'
-import projects from './projects.jpg'
+import projects from './projects.jpeg'
+import projects2 from './projects2.jpeg'
+import projects3 from './projects3.jpeg'
 import Cosmos from './Cosmos.jpg'
 import accentImg_1 from './accentImg_1.png'
 import accentImg_2 from './accentImg_2.png'
@@ -44,6 +46,8 @@ const assets = {
     HeroBg: heroBg,
     About_1: about_1,
     Projects: projects,
+    Projects2: projects2,
+    Projects3: projects3,
     ArrowDown: arrowDown,
     AccentImg_1: accentImg_1,
     Cta: cta,
@@ -153,6 +157,25 @@ const serviceData = [
         ourApproach: "We treat communication as part of brand-building, not a separate exercise. The way you sound to a journalist should match the way you sound on Instagram and on your website. We build the messaging frameworks that make that easy to maintain across every public moment."
     }
 ]
+
+const steps = [
+    {
+        id: 1,
+        title: "Strategy",
+        description: ".Before anything, we take a step back and look at what’s really going on. What you’re doing, what’s missing, and where things are not connecting. Then we set a clear direction so everything has a reason behind it."
+    },
+    {
+        id: 2,
+        title: "Creativity",
+        description: "This is where we bring ideas to life. Not just to make things look good, but to make them make sense. We create content, visuals, and messaging that people can actually understand and connect with."
+    },
+    {
+        id: 3,
+        title: "Execution",
+        description: "Then we get to work. We put everything out properly, consistently, and with structure. Making sure it all aligns, not scattered, and actually moves your brand forward."
+    }
+]
+
 const aboutData = [
     {
         id: 1,
@@ -367,4 +390,4 @@ const stack = [
 
 ]
 
-export { serviceData, marqueeData, stack, aboutData }
+export { serviceData, marqueeData, stack, aboutData, steps }

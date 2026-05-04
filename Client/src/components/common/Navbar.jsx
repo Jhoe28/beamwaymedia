@@ -52,12 +52,21 @@ const Navbar = () => {
             <li><Link to="/contact" className="nav-link transition">CONTACT US</Link></li>
         </ul>
 
-        <div className="flex items-center gap-4">
-            <button type="button" className="bg-white text-gray-600 border border-gray-300 hidden text-sm max-[920px]:hidden min-[921px]:inline active:scale-95 transition-all w-40 h-11 hover:bg-black hover:text-white rounded-md">
+        <div className="flex items-center gap-2">
+            {/* <button type="button" className="bg-white text-gray-600 border border-gray-300 hidden text-sm max-[920px]:hidden min-[921px]:inline active:scale-95 transition-all w-40 h-11 hover:bg-black hover:text-white rounded-md">
                 +1234565800
-            </button>
+            </button> */}
+            <Link href="https://www.instagram.com/beamwaymedia?igsh=MXI4bmJ4OWFzZG9mYw==" className="flex items-center gap-2">
+                <i className="fa-brands fa-instagram text-xl p-2 hover:bg-accent hover:text-white shadow rounded-md"></i>
+            </Link>
+            <Link href="https://x.com/Beamwaymedia" className="flex items-center gap-2">
+                <i className="fa-brands fa-x text-xl p-2 hover:bg-accent hover:text-white shadow rounded-md"></i>
+            </Link>
+            <Link href="https://www.tiktok.com/@beamwaymedia?_r=1&_t=zs-95gggupp8bi" className="flex items-center gap-2">
+                <i className="fa-brands fa-tiktok text-xl p-2 hover:bg-accent hover:text-white shadow rounded-md"></i>
+            </Link>
             <a href="mailto:Beamwaymedia@gmail.com" className="md:flex items-center gap-2 text-sm hover:text-blue-500 transition">
-                <i className="fa-regular fa-envelope text-xl bg-accent text-white hover:bg-black hover:text-white p-3 rounded-md"></i>
+                <i className="fa-regular fa-envelope text-xl bg-accent text-white hover:bg-black hover:text-white p-2 shadow rounded-md"></i>
             </a>
             <button aria-label="menu-btn" type="button" className="menu-btn inline-block md:hidden active:scale-90 transition" onClick={() => setMenuOpen(!menuOpen)}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="#000">

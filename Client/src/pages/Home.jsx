@@ -10,6 +10,7 @@ import CreativeStack from '../components/CreativeStack'
 import CallToAction from '../components/CallToAction'
 import TrustedBy from '../components/TrustedBy'
 import useReveal from '../useReaveal'
+import OurApproach from '../components/OurApproach'
 
 const Home = () => {
   const [activeId, setActiveId] = useState(1)
@@ -57,8 +58,8 @@ const Home = () => {
         ctaText="Learn More About Us"
         contentClassName="reveal"
         image="reveal"
-        className="reveal"
-        aboutImage="min-[950px]:w-[400px] lg:w-[500px] object-cover"
+        className="reveal max-[1200px]:gap-15"
+        aboutImage="min-[950px]:w-[400px] object-cover"
       />
 
       {/* Forth Section */}
@@ -74,7 +75,7 @@ const Home = () => {
             <p className="text-xl text-right text-white relative z-10">Projects <br/>In Progress</p>
             <p className="text-2xl text-neutral-200 mb-2 px-2 relative z-10"><span className="font-medium text-7xl">12+</span></p>
           </div>
-          <div style={{backgroundImage: `url(${assets.Projects})`}} data-delay="200" className="reveal relative border bg-center bg-cover bg-no-repeat border-zinc-200 hover:border-zinc-300 transition-colors rounded-xl p-6 flex flex-col justify-between aspect-square group">
+          <div style={{backgroundImage: `url(${assets.Projects2})`}} data-delay="200" className="reveal relative border bg-center bg-cover bg-no-repeat border-zinc-200 hover:border-zinc-300 transition-colors rounded-xl p-6 flex flex-col justify-between aspect-square group">
             {/* Dark gradient overlay */}
             <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-black/90 via-black/70 to-black/30 group-hover:from-black/70 group-hover:via-black/50 group-hover:to-black/20 transition-all duration-300" />
             
@@ -82,7 +83,7 @@ const Home = () => {
             <p className="text-xl text-right text-white relative z-10">Brands <br/>Supported</p>
             <p className="text-2xl text-neutral-200 mb-2 px-2 relative z-10"><span className="font-medium text-7xl">8+</span></p>
           </div>
-          <div style={{backgroundImage: `url(${assets.Projects})`}} data-delay="400" className="reveal relative border bg-center bg-cover bg-no-repeat border-zinc-200 hover:border-zinc-300 transition-colors rounded-xl p-6 flex flex-col justify-between aspect-square group">
+          <div style={{backgroundImage: `url(${assets.Projects3})`}} data-delay="400" className="reveal relative border bg-center bg-cover bg-no-repeat border-zinc-200 hover:border-zinc-300 transition-colors rounded-xl p-6 flex flex-col justify-between aspect-square group">
             {/* Dark gradient overlay */}
             <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-black/90 via-black/70 to-black/30 group-hover:from-black/70 group-hover:via-black/50 group-hover:to-black/20 transition-all duration-300" />
             
@@ -124,6 +125,7 @@ const Home = () => {
         ))}
       </div> */}
       {/* Sixth Section */}
+      <OurApproach />
       <CreativeStack />
       {/*  Seventh Section */}
       <div class="py-16 px-4 bg-gray-200">

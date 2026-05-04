@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import Hero from '../components/Hero'
 import assets from '../assets/assets'
 import ContactForm from '../components/ContactForm'
@@ -6,6 +6,7 @@ import TrustedBy from '../components/TrustedBy'
 import AboutDescription from '../components/AboutDescription'
 import { aboutData } from '../assets/assets'
 import useReveal from '../useReaveal'
+// import OurApproach from ../Component/
 
 const About = () => {
   useReveal()
@@ -15,10 +16,10 @@ const About = () => {
           heading="Who We Are"
           subheading="At Beamway we do not manage platforms, we manage perception. And we do it with the clarity, creativity, and intention that every serious bramds deserve"
           heroImage={assets.AccentImg_1}
-          className="min-[767px]:items-end max-[767px]:justify-center min-h-[30vh]"
+          className="min-[767px]:items-center max-[767px]:justify-center max-h-[60vh]"
       />
       <Hero 
-        heading="Who We Are" 
+        heading="The Thinking Behind Beamway"
         subheading="Beamway Media is a creative media and marketing company focused on helping brands communicate with clarity and direction.
         We work at the intersection of creativity and strategy, bringing structure to how brands show up across all platforms.
         We support founders, businesses, organizations and leaders who want to present their brand in a way that feels clear, consistent, and aligned with what they offer. We believe strong brands are not built on noise. They are built on clarity, storytelling, and consistent execution." 
@@ -26,7 +27,11 @@ const About = () => {
         Every project is treated with structure, thought, and creative direction that aligns with long-term growth."
         heroImage={assets.About_1}
         ctaText="Learn More About Us"
-        className="bg-gray-100"
+        image="reveal"
+        headingClassName="reveal"
+        textClassName="reveal"
+        className="max-[1200px]:gap-15 bg-gray-100"
+        aboutImage="min-[950px]:w-[400px] object-cover"
       />
 
       <div className='flex flex-col justify-around font-bold gap-10 bg-gray-200 relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-gray-600 px-4 md:px-16 lg:px-24 xl:px-32 py-6 md:py-12'>
@@ -41,7 +46,7 @@ const About = () => {
             <p className="text-xl text-right text-white relative z-10">Projects <br/>In Progress</p>
             <p className="text-2xl text-neutral-200 mb-2 px-2 relative z-10"><span className="font-medium text-7xl">12+</span></p>
           </div>
-          <div style={{backgroundImage: `url(${assets.Projects})`}} data-delay="200" className="reveal relative border bg-center bg-cover bg-no-repeat border-zinc-200 hover:border-zinc-300 transition-colors rounded-xl p-6 flex flex-col justify-between aspect-square group">
+          <div style={{backgroundImage: `url(${assets.Projects2})`}} data-delay="200" className="reveal relative border bg-center bg-cover bg-no-repeat border-zinc-200 hover:border-zinc-300 transition-colors rounded-xl p-6 flex flex-col justify-between aspect-square group">
             {/* Dark gradient overlay */}
             <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-black/90 via-black/70 to-black/30 group-hover:from-black/70 group-hover:via-black/50 group-hover:to-black/20 transition-all duration-300" />
             
@@ -49,7 +54,7 @@ const About = () => {
             <p className="text-xl text-right text-white relative z-10">Brands <br/>Supported</p>
             <p className="text-2xl text-neutral-200 mb-2 px-2 relative z-10"><span className="font-medium text-7xl">8+</span></p>
           </div>
-          <div style={{backgroundImage: `url(${assets.Projects})`}} data-delay="400" className="reveal relative border bg-center bg-cover bg-no-repeat border-zinc-200 hover:border-zinc-300 transition-colors rounded-xl p-6 flex flex-col justify-between aspect-square group">
+          <div style={{backgroundImage: `url(${assets.Projects3})`}} data-delay="400" className="reveal relative border bg-center bg-cover bg-no-repeat border-zinc-200 hover:border-zinc-300 transition-colors rounded-xl p-6 flex flex-col justify-between aspect-square group">
             {/* Dark gradient overlay */}
             <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-black/90 via-black/70 to-black/30 group-hover:from-black/70 group-hover:via-black/50 group-hover:to-black/20 transition-all duration-300" />
             
@@ -60,7 +65,7 @@ const About = () => {
           
         </div>
       </div>
-
+      <OurApproach />
       <div className='bg-gray-200 border-b-2 border-b-gray-300 pt-6 max-[826px]:py-16 lg:py-12'>
         <div className='reveal grid grid-cols-1 md:grid-cols-3 gap-8 pb-6 px-2 md:px-12 lg:px-16 xl:px-24 max-[826px]:hidden border-b border-gray-300'>
           <div className='flex items-center gap-4'>

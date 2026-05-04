@@ -3,7 +3,7 @@ import React from 'react'
 const ServiceDescription = ({ p, title2, description }) => {
   return (
     <>
-        <div className={`grid grid-cols-1 md:grid-cols-3 border-b-2 border-b-gray-300 last:border-none gap-8 py-4 md:py-10 lg:py-14 xl:py-20 px-4 md:px-12 lg:px-16 xl:px-24 hover:bg-gray-100 rounded-lg transition-colors group`}>
+        <div className={`grid grid-cols-1 md:grid-cols-3 border-b-2 border-b-gray-300 last:border-none gap-8 py-4 md:py-10 lg:py-12 px-4 md:px-12 lg:px-16 xl:px-24 hover:bg-gray-100 rounded-lg transition-colors group`}>
             <div>
                 <p className='text-9xl font-bold text-accent group-hover:animate-jump'>{p}</p>
             </div>
