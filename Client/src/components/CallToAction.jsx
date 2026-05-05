@@ -16,6 +16,7 @@ const CallToAction = () => {
             Get Started
         </button>
     </div>
+
   )
 }
 

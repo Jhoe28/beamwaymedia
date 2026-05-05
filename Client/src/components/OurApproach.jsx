@@ -8,9 +8,9 @@ const OurApproach = (props) => {
     <div className="reveal bg-black text-white py-16 px-4 md:px-16 lg:px-24 xl:px-32">
       {/* Header */}
       <div className="text-center mb-16">
-        <p data-delay="100" className="reveal text-xs tracking-widest text-gray-400 uppercase mb-4">Our Approach</p>
-        <h2 data-delay="200" className="reveal text-4xl md:text-6xl font-bold mb-6">We Work With Intention, Not Assumption.</h2>
-        <p data-delay="300" className="reveal text-gray-400 max-w-3xl mx-auto text-sm leading-relaxed">
+        <p data-delay="100" className="reveal text-lg tracking-widest text-gray-400 uppercase mb-4">Our Approach</p>
+        <h2 data-delay="200" className="reveal text-4xl md:text-4xl font-bold mb-6">We Work With Intention, Not Assumption.</h2>
+        <p data-delay="300" className="reveal text-gray-400 max-w-3xl mx-auto text-lg leading-6">
           {props.ourApproach}
         </p>
       </div>
@@ -24,7 +24,7 @@ const OurApproach = (props) => {
             <div className="reveal flex-1" style={{ transitionDelay: `${index * 0.1}s`}}>
               {/* Step label and line */}
               <div className="flex md:flex-col items-start gap-4 md:gap-0 mb-6">
-                <p className="text-xs tracking-widest text-gray-400 uppercase whitespace-nowrap">
+                <p className="text-lg tracking-widest text-gray-400 uppercase whitespace-nowrap">
                   Step {step.id}
                 </p>
 
@@ -37,7 +37,7 @@ const OurApproach = (props) => {
                   {/* Line after dot */}
                   <div className={`
                     bg-accent
-                    h-[2px] w-full md:block
+                    h-[2px] w-full md:hidden hidden
                     ${index === steps.length - 1 ? 'opacity-0' : 'opacity-100'}
                   `} />
                   
@@ -54,7 +54,7 @@ const OurApproach = (props) => {
               {/* Text content */}
               <div className="md:pr-8">
                 <h3 className="text-xl font-bold mb-3">{step.title}</h3>
-                <p className="text-gray-400 text-sm leading-relaxed">{step.description}</p>
+                <p className="text-gray-400 text-lg leading-6">{step.description}</p>
               </div>
             </div>
 

@@ -40,6 +40,7 @@ import vscode from './vscode.png'
 import workspace from './workspace.png'
 import zapier from './zapier.png'
 import zoho from './zoho.png'
+import whatsappLogo from '../assets/whatsappLogo.png'
 
 const assets = {
     Logo: logo,
@@ -51,7 +52,8 @@ const assets = {
     ArrowDown: arrowDown,
     AccentImg_1: accentImg_1,
     Cta: cta,
-    Cosmos: Cosmos
+    Cosmos: Cosmos,
+    WhatsappLogo: whatsappLogo
 }
 
 export default assets
@@ -59,26 +61,6 @@ export default assets
 const serviceData = [
     {
         id: 1,
-        slug: "social-media-marketing",
-        title: "Social Media & Content",
-        description: "We make content that is planned with strategy and built with creativity, so your brand gets noticed and keeps growing.",
-        accentImg: accentImg_1,
-        icon: "diversity_2",
-        littleDescription: "We create high-impact content and videos that turn followers into fans and spark meaningful digital conversations.",
-        
-        headline: "From Random Posts to Strategic Presence.",
-        about: "We help you show up across all platforms with content that is clear, consistent, and shaped by strategy. This is ongoing work, not one-off posts. We build the systems that give your brand a steady presence on the platforms that matter, with content that connects to your audience and keeps your visibility growing month after month.",
-        listItem1: "Content strategy",
-        listItem2: "Content calendars and editorial planning",
-        listItem3: "Copywriting for posts and captions",
-        listItem4: "Creative direction for visuals",
-        listItem5: "Community management",
-        listItem6: "Performance reviews",
-
-        ourApproach: "Every piece of content connects back to your brand’s position and audience. We plan ahead so the work feels intentional, and we pay close attention to what is actually working. The plan adjusts as we go, so the content keeps getting sharper."
-    },
-    {
-        id: 2,
         slug: "brand-storytelling",
         title: "Brand Identity & Storytelling",
         description: "We help you figure out who your brand is and how it shows up. From message and story to visuals, we shape what makes your brand yours.",
@@ -98,7 +80,7 @@ const serviceData = [
         ourApproach: "We start with conversations, not creative briefs. We learn your brand from the inside, the people behind it and the audience in front of it, then build the positioning, story, and visual identity that make it feel like itself."
     },
     {
-        id: 3,
+        id: 2,
         slug: "digital-marketing-services",
         title: "Digital Marketing & Advertising",
         description: "We run campaigns where the strategy and the creative pull in the same direction, so your spend reaches the right people and actually pays back.",
@@ -116,6 +98,26 @@ const serviceData = [
         listItem6: "Campaign performance tracking",
 
         ourApproach: "We treat marketing as a creative discipline, not a numbers game. Strategy, message, and creative all pull in the same direction, otherwise the spend gets wasted on campaigns that look fine and convert poorly. We track performance closely and adjust before things drift, so the spend earns its way back."
+    },
+        {
+        id: 3,
+        slug: "social-media-marketing",
+        title: "Social Media & Content",
+        description: "We make content that is planned with strategy and built with creativity, so your brand gets noticed and keeps growing.",
+        accentImg: accentImg_1,
+        icon: "diversity_2",
+        littleDescription: "We create high-impact content and videos that turn followers into fans and spark meaningful digital conversations.",
+        
+        headline: "From Random Posts to Strategic Presence.",
+        about: "We help you show up across all platforms with content that is clear, consistent, and shaped by strategy. This is ongoing work, not one-off posts. We build the systems that give your brand a steady presence on the platforms that matter, with content that connects to your audience and keeps your visibility growing month after month.",
+        listItem1: "Content strategy",
+        listItem2: "Content calendars and editorial planning",
+        listItem3: "Copywriting for posts and captions",
+        listItem4: "Creative direction for visuals",
+        listItem5: "Community management",
+        listItem6: "Performance reviews",
+
+        ourApproach: "Every piece of content connects back to your brand’s position and audience. We plan ahead so the work feels intentional, and we pay close attention to what is actually working. The plan adjusts as we go, so the content keeps getting sharper."
     },
     {
         id: 4,
