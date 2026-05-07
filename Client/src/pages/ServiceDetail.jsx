@@ -39,7 +39,7 @@ const ServiceDetail = () => {
         listItem5={service.listItem5}
         listItem6={service.listItem6}
         className={service.id % 2 === 0 ? 'md:!flex-row-reverse gap-30' : 'md:!flex-row'}
-        headingClassName="md:text-4xl leading-12"
+        headingClassName="md:text-4xl leading-11"
       />
 
       <OurApproach
