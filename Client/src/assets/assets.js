@@ -41,6 +41,10 @@ import workspace from './workspace.png'
 import zapier from './zapier.png'
 import zoho from './zoho.png'
 import whatsappLogo from '../assets/whatsappLogo.png'
+import gaotechlogo from '../assets/gaotechlogo.png'
+import codecraftlogo from '../assets/codecraftlogo.jpg'
+import elevvopathwayslogo from '../assets/elevvopathwayslogo.jpg'
+import sybex from '../assets/sybexlogo.jpg'
 
 const assets = {
     Logo: logo,
@@ -53,7 +57,11 @@ const assets = {
     AccentImg_1: accentImg_1,
     Cta: cta,
     Cosmos: Cosmos,
-    WhatsappLogo: whatsappLogo
+    WhatsappLogo: whatsappLogo,
+    Gaotechlogo: gaotechlogo,
+    Codecraft: codecraftlogo,
+    Elevvo: elevvopathwayslogo,
+    Sybex: sybex
 }
 
 export default assets
@@ -164,7 +172,7 @@ const steps = [
     {
         id: 1,
         title: "Strategy",
-        description: ".Before anything, we take a step back and look at what’s really going on. What you’re doing, what’s missing, and where things are not connecting. Then we set a clear direction so everything has a reason behind it."
+        description: "Before anything, we take a step back and look at what’s really going on. What you’re doing, what’s missing, and where things are not connecting. Then we set a clear direction so everything has a reason behind it."
     },
     {
         id: 2,

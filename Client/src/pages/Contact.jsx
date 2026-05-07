@@ -12,7 +12,8 @@ const Contact = () => {
       <Hero 
           heading="Reach Out To Us"
           heroImage={assets.AccentImg_1}
-          className="min-[767px]:items-end max-[767px]:justify-end min-h-[30vh]"
+          className="min-[950px]:items-center max-[950px]:justify-center max-h-[50vh] "
+          headingClassName="reveal text-5xl max-[1100px]:leading-12"
       />
       <ContactForm />
       <TrustedBy />

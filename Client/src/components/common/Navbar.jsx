@@ -16,7 +16,7 @@ const Navbar = () => {
         </a>
 
         {/* Desktop Menu */}
-        <ul className="md:flex hidden items-center md:gap-8 lg:gap-12 xl:gap-16">
+        <ul className="min-[1022px]:flex hidden items-center md:gap-8 lg:gap-12 xl:gap-16">
             <li><Link to="/" className="nav-link transition">HOME</Link></li>
             <li><Link to="/about" className="nav-link transition">ABOUT US</Link></li>
             
@@ -53,22 +53,19 @@ const Navbar = () => {
         </ul>
 
         <div className="flex items-center gap-2">
-            {/* <button type="button" className="bg-white text-gray-600 border border-gray-300 hidden text-sm max-[920px]:hidden min-[921px]:inline active:scale-95 transition-all w-40 h-11 hover:bg-black hover:text-white rounded-md">
-                +1234565800
-            </button> */}
-            <a href="https://www.instagram.com/beamwaymedia?igsh=MXI4bmJ4OWFzZG9mYw==" className="flex items-center gap-2">
+            <a href="https://www.instagram.com/beamwaymedia?igsh=MXI4bmJ4OWFzZG9mYw==" target='_blank' className="flex items-center gap-2">
                 <i className="fa-brands fa-instagram text-xl p-2 hover:bg-accent hover:text-white shadow rounded-md"></i>
             </a>
-            <a href="https://x.com/Beamwaymedia" className="flex items-center gap-2">
+            <a href="https://x.com/Beamwaymedia" target='_blank' className="flex items-center gap-2">
                 <i className="fa-brands fa-x text-xl p-2 hover:bg-accent hover:text-white shadow rounded-md"></i>
             </a>
-            <a href="https://www.tiktok.com/@beamwaymedia?_r=1&_t=zs-95gggupp8bi" className="flex items-center gap-2">
+            <a href="https://www.tiktok.com/@beamwaymedia?_r=1&_t=zs-95gggupp8bi" target='_blank' className="flex items-center gap-2">
                 <i className="fa-brands fa-tiktok text-xl p-2 hover:bg-accent hover:text-white shadow rounded-md"></i>
             </a>
             <a href="mailto:Beamwaymedia@gmail.com" className="md:flex items-center gap-2 text-sm hover:text-blue-500 transition">
                 <i className="fa-regular fa-envelope text-xl bg-accent text-white hover:bg-black hover:text-white p-2 shadow rounded-md"></i>
             </a>
-            <button aria-label="menu-btn" type="button" className="menu-btn inline-block md:hidden active:scale-90 transition" onClick={() => setMenuOpen(!menuOpen)}>
+            <button aria-label="menu-btn" type="button" className="menu-btn inline-block min-[1022px]:hidden active:scale-90 transition" onClick={() => setMenuOpen(!menuOpen)}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="#000">
                     <path d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z"></path>
                 </svg>

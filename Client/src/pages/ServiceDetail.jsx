@@ -23,8 +23,8 @@ const ServiceDetail = () => {
       <Hero
         heading={service.title}
         heroImage={service.accentImg}
-        className="min-[767px]:items-end max-[767px]:justify-end min-h-[30vh]"
-        headingClassName= 'text-5xl md:text-6xl lg:text-7xl min-[768px]:leading-20'
+        className="min-[950px]:items-center max-[950px]:justify-center max-h-[50vh] "
+        headingClassName="reveal text-5xl max-[1100px]:leading-12"
       />
       
       {/* Second Section */}
@@ -39,6 +39,7 @@ const ServiceDetail = () => {
         listItem5={service.listItem5}
         listItem6={service.listItem6}
         className={service.id % 2 === 0 ? 'md:!flex-row-reverse gap-30' : 'md:!flex-row'}
+        headingClassName="md:text-4xl leading-12"
       />
 
       <OurApproach

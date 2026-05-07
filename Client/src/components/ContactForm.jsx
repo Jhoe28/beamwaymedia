@@ -117,7 +117,7 @@ const ContactForm = () => {
                 </form>
             </div>
 
-            <div className="rounded-3xl p-10 relative min-h-[662px] w-full max-w-[520px] max-[1023px]:hidden min-[1024px]:flex flex-col justify-between overflow-hidden">
+            <div className="rounded-3xl p-10 relative max-h-[500px] h-full w-full max-w-[450px] max-[1023px]:hidden min-[1024px]:flex flex-col justify-between overflow-hidden">
                 <img src={assets.AccentImg_1} alt="3D shapes" className="reveal animate-breathe absolute inset-0 w-full h-full object-cover" />
             </div>
         </div>

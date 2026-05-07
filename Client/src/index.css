@@ -61,6 +61,9 @@
     opacity: 1;
     transform: scale(1);
   }
+  .gradient{
+    background: radial-gradient( rgba(255, 255, 255, 0.9),rgba(21, 75, 252, 0.15));
+  }
 }
 
 @keyframes breathe {

@@ -16,7 +16,11 @@ const About = () => {
           heading="Who We Are"
           subheading="At Beamway we do not manage platforms, we manage perception. And we do it with the clarity, creativity, and intention that every serious bramds deserve"
           heroImage={assets.AccentImg_1}
-          className="min-[767px]:items-center max-[767px]:justify-center max-h-[60vh]"
+          className="min-[950px]:items-center"
+          headingClassName="text-5xl max-[950px]:text-center"
+          textClassName="max-[950px]:text-center"
+          contentClassName="min-[950px]:items-start max-[950px]:items-center"
+
       />
       <Hero 
         heading="The Thinking Behind Beamway"
@@ -28,14 +32,14 @@ const About = () => {
         heroImage={assets.About_1}
         ctaText="Learn More About Us"
         image="reveal"
-        headingClassName="reveal"
+        headingClassName="reveal text-4xl max-[1100px]:leading-12"
         textClassName="reveal"
         className="max-[1200px]:gap-15 bg-gray-100"
         aboutImage="min-[950px]:w-[400px] object-cover"
       />
 
       <div className='flex flex-col justify-around font-bold gap-10 bg-gray-200 relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-gray-600 px-4 md:px-16 lg:px-24 xl:px-32 py-6 md:py-12'>
-        <h1 className='text-5xl reveal'>Our Impact</h1>
+        <h1 className='text-4xl reveal'>Our Impact</h1>
 
         <div className="grid max-[832px]:grid-cols-1 max-[1023px]:grid-cols-2 min-[1024px]:grid-cols-3 gap-8">
           <div style={{backgroundImage: `url(${assets.Projects})`}} data-delay="0" className="reveal relative border bg-center bg-cover bg-no-repeat border-zinc-200 hover:border-zinc-300 transition-colors rounded-xl p-6 flex flex-col justify-between aspect-square group">
@@ -91,15 +95,13 @@ const About = () => {
       </div>
 
       <div className='px-4 md:px-12 lg:px-16 xl:px-24 py-6 md:py-12 lg:py-16 xl:py-24'>
-        <p className='reveal font-bold md:font-2xl text-center'>
+        <p className='reveal font-bold md:text-2xl text-center'>
             In a world saturated with content, the problem is not that brands are invisible it is that they have not been made clear. Most organisations communicate loudly without saying anything that sticks. They produce content without direction, campaigns without context, and visibility without meaning.
             Beamway Media was built on a different conviction: that deep strategic thinking, when combined with genuine creative craft, produces communication that does not just reach people it moves them.<br/><br/> We believe in work that carries weight, earns trust, and builds something worth being seen for.
             Storytelling is not a department or a format for us. It is the lens through which every brand decision should be made. A well-told story changes how audiences feel, how they remember, and ultimately how they act.
             Strategy is not an afterthought here. It is the first conversation, the architecture on which creative is built. Without it, even the most beautiful work gets lost. With it, even simple content becomes a competitive advantage.
         </p>
       </div>
-
-
 
       <ContactForm />
       <TrustedBy />

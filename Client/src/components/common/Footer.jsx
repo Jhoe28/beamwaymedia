@@ -26,13 +26,13 @@ const Footer = () => {
                     <div>
                         <h2 data-delay="500" className="reveal font-semibold mb-5">Socials</h2>
                         <div  data-delay="500" className="reveal text-sm space-y-2">
-                            <a href="https://www.instagram.com/beamwaymedia?igsh=MXI4bmJ4OWFzZG9mYw==" className="flex items-center gap-2">
+                            <a href="https://www.instagram.com/beamwaymedia?igsh=MXI4bmJ4OWFzZG9mYw==" target='_blank' className="flex items-center gap-2">
                               <i className="fa-brands fa-instagram text-xl p-2 hover:bg-white hover:text-black rounded-md"></i>
                             </a>
-                            <a href="https://x.com/Beamwaymedia" className="flex items-center gap-2">
+                            <a href="https://x.com/Beamwaymedia" target='_blank' className="flex items-center gap-2">
                               <i class="fa-brands fa-x-twitter text-xl p-2 hover:bg-white hover:text-black rounded-md"></i>
                             </a>
-                            <a href="https://www.tiktok.com/@beamwaymedia?_r=1&_t=zs-95gggupp8bi" className="flex items-center gap-2">
+                            <a href="https://www.tiktok.com/@beamwaymedia?_r=1&_t=zs-95gggupp8bi" target='_blank' className="flex items-center gap-2">
                               <i class="fa-brands fa-tiktok text-xl p-2 hover:bg-white hover:text-black rounded-md"></i>
                             </a> 
                         </div>

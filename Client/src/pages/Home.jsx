@@ -29,9 +29,9 @@ const Home = () => {
           subheading="We build creative marketing systems using content, branding, and strategy that improve how your brand is seen, understood, and positioned for growth and sales." 
           heroImage={assets.HeroBg}
           ctaText="Start Your Brand Journey here!"
-          aboutImage='max-h-[700px] h-full'
+          aboutImage='max-h-[700px] h-full max-[1100px]:w-[400px]'
           href="contact"
-          headingClassName="text-5xl"
+          headingClassName="text-5xl max-[1100px]:text-4xl max-[1100px]:leading-12"
       />
 
       {/* Second Section */}
