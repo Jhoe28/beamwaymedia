@@ -36,7 +36,7 @@ const Home = () => {
 
       {/* Second Section */}
       <div className='w-full bg-gray-200 mt-0 px-4 md:px-16 lg:px-24 xl:px-32 py-4 md:py-6 lg:py-12 xl:py-16'>
-        <h1 className='reveal text-4xl my-8 font-bold animate-on-scroll'>How We Can Help You</h1>
+        <h1 className='reveal max-[407px]:text-3xl text-4xl my-8 font-bold animate-on-scroll'>How We Can Help You</h1>
         <div className='grid max-[870px]:grid-cols-1 max-[920px]:grid-cols-2 min-[921px]:grid-cols-3 my-2 sm:my-4 md:my-6 lg:my-12 gap-6'>
           {serviceData.map((service, index) => (
             <div key={service.id} className='reveal' style={{ transitionDelay: `${index * 0.1}s`}}>
@@ -62,7 +62,7 @@ const Home = () => {
         Every project is treated with structure, thought, and creative direction that aligns with long-term growth."
         heroImage={assets.About_1}
         ctaText="Learn More About Us"
-        headingClassName="text-4xl"
+        headingClassName="text-4xl max-[407px]:text-3xl"
         contentClassName="reveal"
         image="reveal"
         className="reveal max-[1200px]:gap-15"
@@ -72,7 +72,7 @@ const Home = () => {
 
       {/* Forth Section */}
       <div className='flex flex-col justify-around font-bold gap-10 bg-gray-200 relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-gray-600 px-4 md:px-16 lg:px-24 xl:px-32 py-6 md:py-12'>
-        <h1 className='text-4xl reveal'>Our Impact</h1>
+        <h1 className='text-4xl max-[407px]:text-3xl reveal'>Our Impact</h1>
 
         <div className="grid max-[832px]:grid-cols-1 max-[1023px]:grid-cols-2 min-[1024px]:grid-cols-3 gap-8">
           <div style={{backgroundImage: `url(${assets.Projects})`}} data-delay="0" className="reveal relative border bg-center bg-cover bg-no-repeat border-zinc-200 hover:border-zinc-300 transition-colors rounded-xl p-6 flex flex-col justify-between aspect-square group">
@@ -107,7 +107,7 @@ const Home = () => {
       <CreativeStack />
       {/*  Seventh Section */}
       <div class="py-16 px-4 bg-gray-200">
-        <h1 className='reveal font-semibold text-gray-900 text-3xl md:text-4xl text-center mx-auto'>Don't just take our words</h1>
+        <h1 className='reveal font-semibold text-gray-900 max-[407px]:text-3xl md:text-4xl text-center mx-auto'>Don't just take our words</h1>
         <p className=' reveal text-lg leading-6 text-gray-600 text-center mt-2 max-w-xl mx-auto'>Hear what our users say about us. We're always looking for ways to improve. If you have a positive experience with us, leave a review.</p>
         <div class="relative max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 md:px-0 pt-16">
             <div data-delay="0" className='reveal bg-gray-800 rounded-lg p-6 transform transition hover:-translate-y-1'>

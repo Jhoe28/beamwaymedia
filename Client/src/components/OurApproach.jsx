@@ -9,7 +9,7 @@ const OurApproach = (props) => {
       {/* Header */}
       <div className="text-center mb-16">
         <p data-delay="100" className="reveal text-lg tracking-widest text-gray-400 uppercase mb-4">Our Approach</p>
-        <h2 data-delay="200" className="reveal text-4xl md:text-4xl font-bold mb-6">We Work With Intention, Not Assumption.</h2>
+        <h2 data-delay="200" className="reveal max-[407px]:text-3xl text-4xl md:text-4xl font-bold mb-6">We Work With Intention, Not Assumption.</h2>
         <p data-delay="300" className="reveal text-gray-400 max-w-3xl mx-auto text-lg leading-6">
           {props.ourApproach}
         </p>
@@ -21,7 +21,7 @@ const OurApproach = (props) => {
           <div key={step.id} className="flex-1 flex flex-col md:flex-row">
             
             {/* Step content */}
-            <div className="reveal flex-1" style={{ transitionDelay: `${index * 0.1}s`}}>
+            <div className="reveal flex-1 mb-6" style={{ transitionDelay: `${index * 0.1}s`}}>
               {/* Step label and line */}
               <div className="flex md:flex-col items-start gap-4 md:gap-0 mb-6">
                 <p className="text-lg tracking-widest text-gray-400 uppercase whitespace-nowrap">

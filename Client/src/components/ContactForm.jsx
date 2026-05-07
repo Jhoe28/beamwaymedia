@@ -49,7 +49,7 @@ const ContactForm = () => {
     <div className="flex items-center justify-center py-12 px-4 bg-gray-100">
         <div className="grid min-[1024px]:grid-cols-2 max-[1023px]:grid-cols-1 md:gap-10 lg:gap-20 max-w-7xl w-full items-center">
             <div className="p-5">
-                <h1 className="reveal text-4xl font-semibold text-gray-900 text-center md:text-start mb-3 tracking-tight">
+                <h1 className="reveal max-[407px]:text-3xl text-4xl font-semibold text-gray-900 text-center md:text-start mb-3 tracking-tight">
                     Get in touch
                 </h1>
                 <p className="reveal text-lg text-gray-600 text-center md:text-start mx-auto md:mx-0 mb-8 leading-6 max-w-[600px]">

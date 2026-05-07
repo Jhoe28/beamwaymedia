@@ -27,8 +27,8 @@
   --font-mono: ui-monospace, Consolas, monospace;
   --animate-breathe: breathe 3s ease-in-out infinite;
   --animate-jump: jump 1s ease-in-out infinite;
-  --animate-marquee: marqueeScroll 25s linear infinite;
-  --animate-marquee-reverse: marqueeScroll 25s linear infinite reverse;
+  --animate-marquee: marqueeScroll 10s linear infinite;
+  --animate-marquee-reverse: marqueeScroll 10s linear infinite reverse;
   --animate-heroAnimation: heroAnimation 2s ease;
   --animate-appear: appear 2s ease;
   --animate-slideDown: slideDown 2s ease;
