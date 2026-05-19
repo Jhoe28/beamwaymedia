@@ -32,14 +32,20 @@ const About = () => {
         heroImage={assets.About_1}
         ctaText="Learn More About Us"
         image="reveal"
-        headingClassName="reveal text-4xl max-[1100px]:leading-12"
-        textClassName="reveal"
-        className="max-[1200px]:gap-15 bg-gray-100"
-        aboutImage="min-[950px]:w-[400px] object-cover"
+        // headingClassName="reveal text-4xl max-[1100px]:leading-12"
+        // textClassName="reveal"
+        // className="max-[1200px]:gap-15 bg-gray-100"
+        // aboutImage='max-h-[500px] h-full w-[450px]'
+        className="min-[950px]:items-center max-[1200px]:gap-4 bg-gray-100"
+        headingClassName="text-5xl max-[950px]:text-center"
+        textClassName="max-[950px]:text-center"
+        contentClassName="min-[950px]:items-start max-[950px]:items-center"
+
       />
 
+      {/* Forth Section */}
       <div className='flex flex-col justify-around font-bold gap-10 bg-gray-200 relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-gray-600 px-4 md:px-16 lg:px-24 xl:px-32 py-6 md:py-12'>
-        <h1 className='text-4xl reveal'>Our Impact</h1>
+        <h1 className='text-4xl max-[407px]:text-3xl reveal'>Our Impact</h1>
 
         <div className="grid max-[832px]:grid-cols-1 max-[1023px]:grid-cols-2 min-[1024px]:grid-cols-3 gap-8">
           <div style={{backgroundImage: `url(${assets.Projects})`}} data-delay="0" className="reveal relative border bg-center bg-cover bg-no-repeat border-zinc-200 hover:border-zinc-300 transition-colors rounded-xl p-6 flex flex-col justify-between aspect-square group">
@@ -48,7 +54,7 @@ const About = () => {
             
             {/* Content stays on top */}
             <p className="text-xl text-right text-white relative z-10">Projects <br/>In Progress</p>
-            <p className="text-2xl text-neutral-200 mb-2 px-2 relative z-10"><span className="font-medium text-7xl">12+</span></p>
+            <p className="text-2xl text-neutral-200 mb-2 px-2 relative italic z-10"><span className="font-medium text-7xl">12+</span></p>
           </div>
           <div style={{backgroundImage: `url(${assets.Projects2})`}} data-delay="200" className="reveal relative border bg-center bg-cover bg-no-repeat border-zinc-200 hover:border-zinc-300 transition-colors rounded-xl p-6 flex flex-col justify-between aspect-square group">
             {/* Dark gradient overlay */}
@@ -56,7 +62,7 @@ const About = () => {
             
             {/* Content stays on top */}
             <p className="text-xl text-right text-white relative z-10">Brands <br/>Supported</p>
-            <p className="text-2xl text-neutral-200 mb-2 px-2 relative z-10"><span className="font-medium text-7xl">8+</span></p>
+            <p className="text-2xl text-neutral-200 mb-2 px-2 relative italic z-10"><span className="font-medium text-7xl">8+</span></p>
           </div>
           <div style={{backgroundImage: `url(${assets.Projects3})`}} data-delay="400" className="reveal relative border bg-center bg-cover bg-no-repeat border-zinc-200 hover:border-zinc-300 transition-colors rounded-xl p-6 flex flex-col justify-between aspect-square group">
             {/* Dark gradient overlay */}
@@ -64,7 +70,7 @@ const About = () => {
             
             {/* Content stays on top */}
             <p className="text-xl text-right text-white relative z-10">Content <br/>Pieces Created</p>
-            <p className="text-2xl text-neutral-200 mb-2 px-2 relative z-10"><span className="font-medium text-7xl">100+</span></p>
+            <p className="text-2xl text-neutral-200 mb-2 px-2 relative italic z-10"><span className="font-medium text-7xl">100+</span></p>
           </div>
           
         </div>

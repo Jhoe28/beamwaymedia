@@ -4,6 +4,7 @@ import about_1 from './about_1.png'
 import projects from './projects.jpeg'
 import projects2 from './projects2.jpeg'
 import projects3 from './projects3.jpeg'
+import aboutImg from './aboutImg.jpeg'
 import Cosmos from './Cosmos.jpg'
 import accentImg_1 from './accentImg_1.png'
 import accentImg_2 from './accentImg_2.png'
@@ -49,7 +50,7 @@ import sybex from '../assets/sybexlogo.jpg'
 const assets = {
     Logo: logo,
     HeroBg: heroBg,
-    About_1: about_1,
+    About_1: aboutImg,
     Projects: projects,
     Projects2: projects2,
     Projects3: projects3,

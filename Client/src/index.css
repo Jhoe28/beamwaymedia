@@ -35,13 +35,17 @@
 }
 
 @layer base {
-  body {
+  /* body {
     font-family: "Gilroy", system-ui, sans-serif;
     font-weight: 400;
-  }
+  } */
   h1, h2, h3, h4, h5, h6 {
     font-family: "Gilroy", system-ui, sans-serif;
     font-weight: 700;
+  }
+  P {
+    font-family: poppins, system-ui, sans-serif;
+    font-weight: 400;
   }
 }
 

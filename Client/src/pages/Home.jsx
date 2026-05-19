@@ -21,7 +21,7 @@ const Home = () => {
           <div className='px-2 py-3 -translate-2 whitespace-nowrap rounded-md bg-white text-black font-bold flex items-center shadow-lg'>
             <p className='font-semibold text-sm md:text-base'>Chat with us</p>
           </div>
-          <img src={assets.WhatsappLogo} alt="Whatsapp Link" className='w-full max-w-20 w-full shadow-lg max-h-20 h-full bg-white rounded-full hover:-translate-y-2' />
+          <img src={assets.WhatsappLogo} alt="Whatsapp Link" className='w-full max-w-20 shadow-lg max-h-20 h-full bg-white rounded-full hover:-translate-y-2' />
       </div>
       <Hero 
           heading="Build Your Brand, Shape Your Message,"
@@ -29,7 +29,7 @@ const Home = () => {
           subheading="We build creative marketing systems using content, branding, and strategy that improve how your brand is seen, understood, and positioned for growth and sales." 
           heroImage={assets.HeroBg}
           ctaText="Start Your Brand Journey here!"
-          aboutImage='max-h-[700px] h-full max-[1100px]:w-[400px]'
+          aboutImage='max-h-[700px] h-full max-[1200px]:w-[400px]'
           href="contact"
           headingClassName="text-5xl max-[1100px]:text-4xl max-[1100px]:leading-12"
       />
@@ -66,7 +66,7 @@ const Home = () => {
         contentClassName="reveal"
         image="reveal"
         className="reveal max-[1200px]:gap-15"
-        aboutImage="min-[950px]:w-[400px] object-cover"
+        aboutImage='max-h-[500px] h-full w-[450px]'
         href="about"
       />
 
@@ -81,7 +81,7 @@ const Home = () => {
             
             {/* Content stays on top */}
             <p className="text-xl text-right text-white relative z-10">Projects <br/>In Progress</p>
-            <p className="text-2xl text-neutral-200 mb-2 px-2 relative z-10"><span className="font-medium text-7xl">12+</span></p>
+            <p className="text-2xl text-neutral-200 mb-2 px-2 relative italic z-10"><span className="font-medium text-7xl">12+</span></p>
           </div>
           <div style={{backgroundImage: `url(${assets.Projects2})`}} data-delay="200" className="reveal relative border bg-center bg-cover bg-no-repeat border-zinc-200 hover:border-zinc-300 transition-colors rounded-xl p-6 flex flex-col justify-between aspect-square group">
             {/* Dark gradient overlay */}
@@ -89,7 +89,7 @@ const Home = () => {
             
             {/* Content stays on top */}
             <p className="text-xl text-right text-white relative z-10">Brands <br/>Supported</p>
-            <p className="text-2xl text-neutral-200 mb-2 px-2 relative z-10"><span className="font-medium text-7xl">8+</span></p>
+            <p className="text-2xl text-neutral-200 mb-2 px-2 relative italic z-10"><span className="font-medium text-7xl">8+</span></p>
           </div>
           <div style={{backgroundImage: `url(${assets.Projects3})`}} data-delay="400" className="reveal relative border bg-center bg-cover bg-no-repeat border-zinc-200 hover:border-zinc-300 transition-colors rounded-xl p-6 flex flex-col justify-between aspect-square group">
             {/* Dark gradient overlay */}
@@ -97,7 +97,7 @@ const Home = () => {
             
             {/* Content stays on top */}
             <p className="text-xl text-right text-white relative z-10">Content <br/>Pieces Created</p>
-            <p className="text-2xl text-neutral-200 mb-2 px-2 relative z-10"><span className="font-medium text-7xl">100+</span></p>
+            <p className="text-2xl text-neutral-200 mb-2 px-2 relative italic z-10"><span className="font-medium text-7xl">100+</span></p>
           </div>
           
         </div>
@@ -113,17 +113,17 @@ const Home = () => {
             <div data-delay="0" className='reveal bg-gray-800 rounded-lg p-6 transform transition hover:-translate-y-1'>
                 {/* <p class='font-medium text-sm text-white mb-6'>Product Designer</p> */}
                 <p className='text-lg leading-6 text-gray-200 mb-4.5'>"Beamway helped us refine our brand positioning. We finally understood how to communicate what we do in a clear and simple way."</p>
-                <p className='text-xs text-gray-300'>- Client Feedback</p>
+                <p className='text-xs text-gray-300 italic'>- Client Feedback</p>
             </div>
             <div data-delay="200" className='reveal bg-gray-800 rounded-lg p-6 transform transition hover:-translate-y-1'>
                 {/* <p class='font-medium text-sm text-white mb-6'>Software Engineer</p> */}
                 <p className='text-lg leading-6 text-gray-200 mb-4.5'>"The structure they brought to our content completely changed our consistency. Our social media now feels planned and intentional, not random."</p>
-                <p className='text-xs text-gray-300'>- Client Feedback</p>
+                <p className='text-xs text-gray-300 italic'>- Client Feedback</p>
             </div>
             <div data-delay="400" className='reveal bg-gray-800 rounded-lg p-6 transform transition hover:-translate-y-1'>
                 {/* <p class='font-medium text-sm text-white mb-6'>Marketing Manager</p> */}
                 <p className='text-lg leading-6 text-gray-200 mb-4.5'>"The biggest shift was visibility. Our brand started reaching the right audience and getting more meaningful engagement."</p>
-                <p className='text-xs text-gray-300'>- Client Feedback</p>
+                <p className='text-xs text-gray-300 italic'>- Client Feedback</p>
             </div>
         </div>
       </div>

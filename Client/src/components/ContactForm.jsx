@@ -46,7 +46,7 @@ const ContactForm = () => {
   }
 
   return (
-    <div className="flex items-center justify-center py-12 px-4 bg-gray-100">
+    <div className="flex items-center justify-center py-12 px-4 md:px-12 lg:px-16 xl:px-24 bg-gray-100">
         <div className="grid min-[1024px]:grid-cols-2 max-[1023px]:grid-cols-1 md:gap-10 lg:gap-20 max-w-7xl w-full items-center">
             <div className="p-5">
                 <h1 className="reveal max-[407px]:text-3xl text-4xl font-semibold text-gray-900 text-center md:text-start mb-3 tracking-tight">
@@ -76,7 +76,7 @@ const ContactForm = () => {
                     <div className="reveal mb-5">
                         <label htmlFor="phone" className="block text-lg text-gray-500 mb-2">Phone number</label>
                         <div className="flex border border-gray-300 rounded-lg overflow-hidden focus-within:border-indigo-500 transition-colors">
-                            <select className="px-3 py-3 text-sm outline-none cursor-pointer text-gray-500 bg-white border-r border-gray-300">
+                            <select className="px-3 py-3 text-sm outline-none cursor-pointer text-white bg-black border-r border-gray-300">
                                 <option>US</option>
                                 <option>UK</option>
                                 <option>IN</option>
@@ -110,7 +110,7 @@ const ContactForm = () => {
                     <button
                         type="submit"
                         disabled={status === 'sending'}
-                        className="w-fit px-6 py-3.5 bg-linear-to-r from-black to-gray-800 text-white rounded-md text-lg cursor-pointer transition-all hover:-translate-y-0.5 hover:shadow-[0_10px_20px_rgba(99,102,241,0.3)] disabled:opacity-50 disabled:cursor-not-allowed"
+                        className="w-fit px-6 py-3.5 bg-accent text-white rounded-md text-lg cursor-pointer transition-all hover:-translate-y-0.5 hover:shadow-[0_10px_20px_rgba(99,102,241,0.3)] disabled:opacity-50 disabled:cursor-not-allowed"
                     >
                         {status === 'sending' ? 'Sending...' : 'Send message'}
                     </button>

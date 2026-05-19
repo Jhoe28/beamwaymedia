@@ -35,7 +35,7 @@ const Hero = (props) => {
         <img 
             src={props.heroImage} 
             alt="hero" 
-            className={`animate-appear-breathe hidden min-[950px]:block rounded-md transition-all duration-300 ${props.aboutImage || 'min-[950px]:w-[350px] lg:w-[450px]'}`}
+            className={`animate-appear-breathe hidden min-[1000px]:block rounded-md transition-all duration-300 ${props.aboutImage || 'min-[1000px]:w-[350px]'}`}
         />
     </div>
   )
