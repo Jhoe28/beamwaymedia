@@ -97,7 +97,7 @@ const serviceData = [
         icon: "campaign",
         littleDescription: "Targeted ads and SEO strategies designed to boost visibility, drive traffic, and maximize your return on investment.",
         
-        headline: "Turn Attention Into Real Growth, Not Just Clicks.",
+        headline: "Turn Attention Into Real Growth",
         about: "This is where we help you reach further and grow faster. We build marketing systems that put your brand in front of the right people, with clear messages and creative that earns attention. The goal is never reach for its own sake. It is reach that turns into real outcomes, whether that is leads, sales, or stronger awareness in the markets that matter to you.",
         listItem1: "Digital marketing strategy",
         listItem2: "Paid social and search campaigns",
@@ -164,6 +164,7 @@ const serviceData = [
         listItem4: "Messaging for launches and announcements",
         listItem5: "Crisis communication",
         listItem6: "Reputation management",
+        listItem7: "Influencer Marketing",
 
         ourApproach: "We treat communication as part of brand-building, not a separate exercise. The way you sound to a journalist should match the way you sound on Instagram and on your website. We build the messaging frameworks that make that easy to maintain across every public moment."
     }
