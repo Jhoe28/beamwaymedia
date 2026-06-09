@@ -1,8 +1,8 @@
 import React from 'react'
 import useReveal from '../useReaveal'
 
-const ServiceAbout = ({ headline, about, title, accentImg, listItem1, listItem2, listItem3, listItem4, listItem5, listItem6, ourApproach, className, headingClassName, textClassName }) => {
-  const listItems = [listItem1, listItem2, listItem3, listItem4, listItem5, listItem6].filter(Boolean)
+const ServiceAbout = ({ headline, about, title, accentImg, listItem1, listItem2, listItem3, listItem4, listItem5, listItem6, listItem7, ourApproach, className, headingClassName, textClassName }) => {
+  const listItems = [listItem1, listItem2, listItem3, listItem4, listItem5, listItem6, listItem7].filter(Boolean)
   useReveal()
 
   return (

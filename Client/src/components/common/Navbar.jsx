@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import assets from '../../assets/assets'
 import { serviceData } from '../../assets/assets'
@@ -7,12 +7,25 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false)
   const [servicesOpen, setServicesOpen] = useState(false)
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20)
+    }
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   return (
-    <nav className="animate-slideDown h-[70px] relative w-full px-6 md:px-12 lg:px-16 xl:px-24 flex items-center justify-between z-20 bg-white text-gray-700 shadow-[0px_4px_25px_0px_#0000000D] transition-all">
+    <nav className={`animate-slideDown fixed top-0 left-0 w-full px-6 md:px-12 lg:px-16 xl:px-24 flex items-center justify-between z-50 text-gray-700 transition-all duration-300
+      ${scrolled 
+        ? 'h-[60px] bg-white shadow-[0px_4px_25px_0px_#0000001A]' 
+        : 'h-[70px] bg-white shadow-[0px_4px_25px_0px_#0000000D]'
+      }`}>
             
         <a href="/">
-            <img src={assets.Logo} alt="logo" className="w-40 h-auto" />
+            <img src={assets.Logo} alt="logo" className={`h-auto transition-all duration-300 ${scrolled ? 'w-32' : 'w-40'}`} />
         </a>
 
         {/* Desktop Menu */}
@@ -74,7 +87,7 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {menuOpen && (
-            <div className="mobile-menu absolute top-[70px] left-0 w-full bg-white p-6 shadow-lg z-50">
+            <div className="mobile-menu absolute top-full left-0 w-full bg-white p-6 shadow-lg z-50">
                 <ul className="flex flex-col space-y-4 text-lg">
                     <li><Link to="/" className="text-sm" onClick={() => setMenuOpen(false)}>HOME</Link></li>
                     <li><Link to="/about" className="text-sm" onClick={() => setMenuOpen(false)}>ABOUT US</Link></li>
@@ -97,7 +110,7 @@ const Navbar = () => {
                                             className="text-sm flex items-center gap-2 text-gray-600 hover:text-accent py-1"
                                             onClick={() => { setMenuOpen(false); setMobileServicesOpen(false) }}
                                         >
-                                            <img src={service.img} alt={service.title} className="w-5 h-5 mix-blend-multiply" />
+                                            <span className="material-symbols-outlined text-sm">{service.icon}</span>
                                             {service.title}
                                         </Link>
                                     </li>

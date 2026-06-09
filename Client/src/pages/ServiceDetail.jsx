@@ -1,6 +1,6 @@
 import React from 'react'
 import { useParams, Link } from 'react-router-dom'
-import { serviceData } from '../assets/assets'
+import assets, { serviceData } from '../assets/assets'
 import ContactForm from '../components/ContactForm'
 import Hero from '../components/Hero'
 import ServiceAbout from '../components/ServiceAbout'
@@ -18,7 +18,15 @@ const ServiceDetail = () => {
   )
 
   return (
-    <div>
+    <div className='relative'>
+      <div className='flex items-center gap-2 fixed z-10 bottom-4 md:bottom-15 right-4 md:right-15'>
+          <div className='px-2 py-3 -translate-2 whitespace-nowrap rounded-md bg-white text-black font-bold flex items-center shadow-lg'>
+            <p className='font-semibold text-sm md:text-base'>Chat with us</p>
+          </div>
+          <a href="https://wa.me/+2349060979037" target="_blank" rel="noopener noreferrer">
+            <img src={assets.WhatsappLogo} alt="Whatsapp Link" className='w-full max-w-20 shadow-lg max-h-20 h-full bg-white rounded-full hover:-translate-y-2' />
+          </a>
+      </div>
       {/* Hero Section */}
       <Hero
         heading={service.title}
