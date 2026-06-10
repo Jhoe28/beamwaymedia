@@ -9,8 +9,8 @@ const Footer = () => {
                 <div>
                     <h2 data-delay="100" className="reveal font-semibold text-gray-200 mb-5">Get in touch</h2>
                     <div data-delay="200" className="reveal min-[768px]:text-4xl text-2xl space-y-2">
-                        <p>+1-234-567-800</p>
-                        <p>Beamwaymedia@gmail.com</p>
+                        <p><i className="fa fa-phone" aria-hidden="true"></i> +234 906 097 9037</p>
+                        <p><i className="fa fa-envelope" aria-hidden="true"></i> Beamwaymedia@gmail.com</p>
                     </div>
                 </div>
                 <div className="flex-1 flex items-start md:justify-end gap-20 md:gap-40">
